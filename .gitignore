@@ -1,9 +1,9 @@
 # Eleventy
-_includes/
-_layouts/
-_plugins/
+#_includes/
+#_layouts/
+#_plugins/
 _site/
-.eleventy.js
+#.eleventy.js
 
 # dotenv environment variables file
 .env
@@ -35,3 +35,8 @@ pids
 
 # Local Netlify folder
 .netlify
+
+# OS-specific directory files
+.DS_store
+desktop.ini
+thumbs.db
