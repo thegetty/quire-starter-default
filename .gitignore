@@ -1,9 +1,5 @@
 # Eleventy
-#_includes/
-#_layouts/
-#_plugins/
 _site/
-#.eleventy.js
 
 # dotenv environment variables file
 .env
