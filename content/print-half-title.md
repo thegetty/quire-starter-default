@@ -1,7 +1,7 @@
 ---
 layout: base.11ty.js
 order: 2
-outputs:
+outputs: 
   - epub
   - pdf
 toc: false

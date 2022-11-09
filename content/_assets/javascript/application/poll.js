@@ -1,6 +1,6 @@
 /**
  * Polling module
- *
+ * 
  * @property  {Function} callback Function to call if validate succeeds
  * @property  {Number} interval Interval between tries
  * @property  {Number} maxTries Maximum number of polling attempts
