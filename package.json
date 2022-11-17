@@ -16,6 +16,6 @@
   },
   "homepage": "https://quire.getty.edu/",
   "peerDependencies": {
-    "@thegetty/quire-11ty": "^1.0.0-pre-release.4"
+    "@thegetty/quire-11ty": "^1.0.0-pre-release.5"
   }
 }
