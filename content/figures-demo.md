@@ -18,11 +18,7 @@ order: 505
 
 ## Tables
 
-{% figure "table-2-1" %}
-
-{% figure "table-1" "is-table-scale-7" %}
-
-{% figure "table-3" "is-table-scale-2" %}
+{% figure "table-1" %}
 
 ## YouTube
 
