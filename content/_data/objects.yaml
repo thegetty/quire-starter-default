@@ -16,9 +16,7 @@ object_list:
     location: J. Paul Getty Museum
     link:  https://www.getty.edu/art/collection/object/108E2E
     figure:
-      - id: "cat-1-a"
-      - id: "cat-1-b"
-      - id: "cat-1-c"
+      - id: "cat-1"
 
   - id: 2
     title: Bud Fields and His Wife Ivy, and His Daughter Ellen, Hale County, Alabama
@@ -30,3 +28,5 @@ object_list:
     link: https://www.getty.edu/art/collection/object/104A2K
     figure:
       - id: "cat-2"
+      - id: "cat-2-b"
+      - id: "cat-2-c"
