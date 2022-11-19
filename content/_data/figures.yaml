@@ -127,6 +127,7 @@ figure_list:
     caption: "Dorothea Lange, *Human Erosion in California / Migrant Mother*, 1936."
     credit: The J. Paul Getty Museum, Los Angeles
     download: true
+    zoom: true
   - id: "cat-1-b"
     src: figures/lange-mother-b.jpg
     caption: "Dorothea Lange, alternate version of *Migrant Mother*, 1936."
@@ -140,3 +141,4 @@ figure_list:
     caption: "Walker Evans, *Bud Fields with His Wife Ivy, and His Daughter Ellen, Hale County, Alabama*, 1936."
     credit: The J. Paul Getty Museum, Los Angeles
     download: true
+    zoom: true
