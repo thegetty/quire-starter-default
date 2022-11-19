@@ -1,7 +1,7 @@
 ---
 title: Cover
-order: 1
 layout: cover
+order: 1
 menu: false
 toc: false
 image: spiral-overlay.png

@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Contributors
+layout: page
 order: 501
 ---
 

@@ -1,11 +1,11 @@
 ---
-class: backmatter
 layout: base.11ty.js
 order: 5
+class: backmatter
 outputs:
   - epub
   - pdf
-title: Copyright
+toc: false
 ---
 
 {% copyright %}

@@ -1,10 +1,10 @@
 ---
-class: page-one
 label: I
 title: American Photographs
 subtitle: Evans in Middletown
-order: 30
 layout: essay
+order: 30
+class: page-one
 contributor:
   - id: jkeller
 abstract: |
