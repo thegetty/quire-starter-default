@@ -46,11 +46,11 @@ figure_list:
     preset: static
     canvasId: https://preview.iiif.io/cookbook/3333-choice/recipe/0036-composition-from-multiple-images/canvas/p1
     manifestId: https://gist.githubusercontent.com/stephenwf/19e61dac5c329c77db8cf22fe0366dad/raw/04971529e364063ac88de722db786c97e2df0e6b/manifest.json
-  - id: "dog1"
+  - id: "lange"
     src: figures/lange.jpg
     caption: "*Dorothea Lange, Resettlement Administration photographer, in California*, 1936."
     credit: "Library of Congress Prints and Photographs Division"
-  - id: "dog2"
+  - id: "evans"
     src: figures/evans.jpg
     caption: "*Walker Evans, profile, hand up to face*, 1937."
     credit: "Library of Congress Prints and Photographs Division"
@@ -79,26 +79,11 @@ figure_list:
     src: figures/evans-burroughs.jpg
     caption: "Walker Evans. *Floyd and Lucille Burroughs, Hale County, Alabama*, 1936."
     credit: "The J. Paul Getty Museum, Los Angeles"
-  - id: "fig-6"
-    label: "Figure 6"
-    src: figures/evans-washroom.jpg
-    caption: "Walker Evans. *Washroom in the Dog Run of the Burroughs Home, Hale County, Alabama*, 1936."
-    credit: "The J. Paul Getty Museum, Los Angeles"
-  - id: "fig-7"
-    label: "Figure 7"
-    src: figures/evans-child.jpg
-    caption: "Walker Evans. *Farmer's Child, Alabama / Othel Lee (Squeakie) Burroughs, Hale County, Alabama*, 1936."
-    credit: "The J. Paul Getty Museum, Los Angeles"
-  - id: "fig-8"
-    label: "Figure 8"
-    src: figures/evans-refugee.jpg
-    caption: "Walker Evans. *Arkansas Flood Refugee*, 1937."
-    credit: "The J. Paul Getty Museum, Los Angeles"
   - id: "lange-house"
     src: figures/lange-house.jpg
     caption: "Dorothea Lange. *Abandoned Dust Bowl Home*, about 1935–1940."
     credit: The J. Paul Getty Museum, Los Angeles
-  - id: "evans-video"
+  - id: "vid-1"
     poster: figures/evans-video-still.jpg
     media_id: BpGN0UUtqqU
     media_type: youtube
@@ -131,7 +116,7 @@ figure_list:
   - id: "table-3"
     src: "tables/table-3.html"
     media_type: table
-  - id: "photo-podcast"
+  - id: "audio-1"
     media_id: 336879231
     media_type: soundcloud
     label: "Audio 1"
