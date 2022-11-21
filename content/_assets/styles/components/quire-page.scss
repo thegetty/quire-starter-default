@@ -622,14 +622,14 @@ html {
           @media print {
             margin-top: 0;
           }
-        }  
+        }
       }
       .hero-body {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-grow: .7;
-      }   
+      }
     }
     background-color: transparent;
     .hero-body {
@@ -693,7 +693,7 @@ html {
   // Overrides to Bulma's .content styles where needed.
   padding-bottom: 0;
   .content {
-    a:not(.q-figure__modal-link):not(.q-figure__reset-link) {
+    a:not(.q-figure__modal-link):not(.q-figure__reset-link):not(.quire-contributor__url) {
       @media print {
         color: $print-text-color;
         border-bottom-width: 0;
@@ -730,7 +730,7 @@ html {
     a.footnote-return,
     a.footnote-backref,
     a.footnote-ref {
-      border-bottom-width: 0;
+      border-bottom-width: 0 !important;
       font-weight: bold;
       @media print {
         font-weight: normal;
@@ -794,7 +794,7 @@ html {
       em {
         font-style: normal;
       }
-      
+
       // footnote numbers in blockquotes should be roman
       sup.footnote-ref {
         font-style: normal;
