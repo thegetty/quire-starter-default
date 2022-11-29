@@ -24,30 +24,30 @@
       border-bottom: 1px dotted $accent-color;
     }
     @media print { border-bottom-width: 0; }
-    &.material-icons {
-      font-family: "Material Icons";
-      font-weight: 600;
-      margin-left: .125em;
-      @if $theme == classic {
-        @if (lightness($secondary-background-color) > 50) {
-          color: darken($secondary-background-color, 35%);
-        } @else {
-          color: $white;
-        }
-      } @else {
-        color: $accent-color;
-      }
-      border-bottom-width: 0;
+    &:hover {
+      color: link-hover-color($content-background-color) !important;
+      border-bottom: 1px solid link-hover-color($content-background-color);
     }
     &:hover {
       color: link-hover-color($content-background-color) !important;
       border-bottom: 1px solid link-hover-color($content-background-color);
     }
-    &.material-icons:hover {
+    &--icon {
       border-bottom-width: 0;
-    }
-    &:focus {
-      background-color: $quire-hover-color;
+      margin-left: 2px;
+      svg {
+        @if $theme == classic {
+          fill: $black;
+        } @else {
+          fill: $accent-color;
+        }
+        width: 1em;
+        height: 1em;
+        pointer-events: none;
+      }
+      &:hover {
+        border-bottom-width: 0;
+      }
     }
     em, strong {
       pointer-events: none;
