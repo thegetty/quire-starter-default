@@ -22,6 +22,7 @@ toc: false
 {%- endif -%}
 
 </section>
+
 <section class="publisher-block">
 
 {%- for publisher in publication.publisher -%}
