@@ -1,34 +1,33 @@
 ---
 layout: base.11ty.js
+class: title-page
 order: 3
 outputs:
-  - epub
   - pdf
+  - epub
 toc: false
 ---
-<div class="title-page">
-  {% if publication.title %}
-  <span class="title-tp">
-    {{ publication.title }}
-  </span><br />
-  {% endif %}
-  {% if publication.subtitle %}
-  <span class="sub-title">
-    {{ publication.subtitle }}
-  </span><br />
-  {% endif %}
-  <span class="contributor">
-    {%- if publication.contributor_as_it_appears -%}
-      {{ publication.contributor_as_it_appears | markdownify }}
-    {%- else -%}
-      {% contributors context=publicationContributors type="primary" format="string" %}
-    {%- endif -%}
-  </span><br />
-  <span class="publisher">
-    {%- for publisher in publication.publisher -%}
-      {%- if publisher.name -%}
-        {{ publisher.name }}{% endif %}{% if publisher.name and publisher.location %}, {% endif %}{% if publisher.location %}{{ publisher.location }}
-      {%- endif -%}
-    {%- endfor -%}
-  </span>
-</div>
+
+<section class="title-block">
+
+{%- if publication.title -%}
+  <h1 class="title">{{ publication.title | markdownify }}{% if publication.subtitle %}: {{ publication.subtitle | markdownify }}{% endif %}
+  {% if publication.reading_line %}<br /><br />{{ publication.reading_line | markdownify }}{% endif %}</h1>
+{%- endif -%}
+
+{%- if publication.contributor_as_it_appears -%}
+  <p class="contributor">{{ publication.contributor_as_it_appears | markdownify }}</p>
+{%- else -%}
+  <p class="contributor">{% contributors context=publicationContributors type="primary" format="string" %}</p>
+{%- endif -%}
+
+</section>
+<section class="publisher-block">
+
+{%- for publisher in publication.publisher -%}
+  {%- if publisher.name -%}
+    <p class="publisher">{{ publisher.name }}{% if publisher.location %}, {{ publisher.location }}{% endif %}</p>
+  {%- endif %}
+{%- endfor -%}
+
+</section>
