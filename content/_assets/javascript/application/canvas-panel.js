@@ -79,24 +79,6 @@ const goToFigureState = function ({ annotationIds=[], figureId, region }) {
   }
 
   /**
-   * Update reset link state
-   */
-  const resetLink = figure.querySelector('.q-figure__reset-link')
-  if (resetLink && region) {
-    const disabledLinkClass = 'q-figure__reset-link--disabled'
-    const clickHandler = () => {
-      resetLink.classList.add(disabledLinkClass)
-      update(serviceId, { region: 'reset' })
-    }
-    if (region === 'reset') {
-      resetLink.removeEventListener('click', clickHandler)
-    } else {
-      resetLink.classList.remove(disabledLinkClass)
-      resetLink.addEventListener('click', clickHandler)
-    }
-  }
-
-  /**
    * Update figure state
    */
   update(serviceId, { annotations, region: region || 'reset' })
