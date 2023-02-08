@@ -1,4 +1,5 @@
 import poll from './poll'
+import { intersectionObserverFactory } from './scroll-interactions'
 import scrollToHash from './scroll-to-hash'
 
 /**
@@ -198,6 +199,13 @@ const setUpUIEventHandlers = () => {
      * Annoref shortcode resets the region if none is provided
      */
     const region = annoRef.getAttribute('data-region')
+
+    const onscroll = annoRef.getAttribute('on-scroll')
+    if (onscroll === 'true') {
+      const callback = () => goToFigureState({ annotationIds, figureId, region })
+      intersectionObserverFactory(annoRef, callback)
+    }
+
     annoRef.addEventListener('click', ({ target }) =>
       goToFigureState({ annotationIds, figureId, region })
     )
