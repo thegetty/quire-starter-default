@@ -1,6 +1,6 @@
 import poll from './poll'
-import { intersectionObserverFactory } from './scroll-interactions'
 import scrollToHash from './scroll-to-hash'
+import { intersectionObserverFactory } from './intersection-observer-factory'
 
 /**
  * Get annotation data from annotaitons UI input element
@@ -200,15 +200,15 @@ const setUpUIEventHandlers = () => {
      */
     const region = annoRef.getAttribute('data-region')
 
-    const onscroll = annoRef.getAttribute('on-scroll')
+    const onscroll = annoRef.getAttribute('data-on-scroll')
     if (onscroll === 'true') {
       const callback = () => goToFigureState({ annotationIds, figureId, region })
       intersectionObserverFactory(annoRef, callback)
+    } else {
+      annoRef.addEventListener('click', ({ target }) =>
+        goToFigureState({ annotationIds, figureId, region })
+      )
     }
-
-    annoRef.addEventListener('click', ({ target }) =>
-      goToFigureState({ annotationIds, figureId, region })
-    )
   }
 
   /**

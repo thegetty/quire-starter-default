@@ -8,7 +8,7 @@
  * @param  {Object}        options IntersectionObserver options
  */
 const intersectionObserverFactory = (target, fn, options = {}) => {
-  const options = {
+  const observerOptions = {
     root: null,
     rootMargin: "0px",
     threshold: 1.0,
@@ -19,7 +19,7 @@ const intersectionObserverFactory = (target, fn, options = {}) => {
       if (entry.isIntersecting) fn()
     })
   }
-  const observer = new IntersectionObserver(callback, options)
+  const observer = new IntersectionObserver(callback, observerOptions)
   observer.observe(target)
 }
 
