@@ -7,7 +7,12 @@ const { warn } = chalkFactory('eleventyComputed')
  * Global computed data
  */
 module.exports = {
-  canonicalURL: ({ publication, page }) => page.url && path.join(publication.url, page.url),
+  canonicalURL: ({ publication, page }) => {
+    const { url } = publication
+    const { origin, pathname } = new URL(url)
+    const pagePath = path.join(pathname, page.url)
+    return new URL(pagePath, origin).href
+  },
   eleventyNavigation: {
     /**
      * Explicitly define page data properties used in the TOC
