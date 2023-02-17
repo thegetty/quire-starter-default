@@ -8,10 +8,9 @@ const { warn } = chalkFactory('eleventyComputed')
  */
 module.exports = {
   canonicalURL: ({ publication, page }) => {
-    const { url } = publication
-    const { origin, pathname } = new URL(url)
-    const pagePath = path.join(pathname, page.url)
-    return new URL(pagePath, origin).href
+    let { url } = publication
+    url += url.endsWith('/') ? '' : '/'
+    return new URL(page.url, url).href
   },
   eleventyNavigation: {
     /**
