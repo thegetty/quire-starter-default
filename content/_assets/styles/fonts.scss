@@ -2,12 +2,7 @@
 // Fonts.scss
 // -----------------------------------------------------------------------------
 // Custom font declarations (if any) can be imported here
-@media screen {
-  @import "assets-dir"
-}
-@media print {
-  @import "assets-dir-print"
-}
+$assets-dir: "/_assets/" !default;
 
 @function font($file) {
   @return url($assets-dir + 'fonts/' + $file);
