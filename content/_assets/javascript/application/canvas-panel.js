@@ -50,11 +50,17 @@ const getTarget = (region) => {
 /**
  * Scroll to a figure, or go to figure slide in lightbox
  * Select annotations and/or region, and update the URL
- * @param  {String} figureId    The id of the figure in figures.yaml
- * @param  {Array} annotationIds  The IIIF ids of the annotations to select
- * @param  {String} region      The canvas region
+ * @param  {Array}  annotationIds The IIIF ids of the annotations to select
+ * @param  {String} figureId The id of the figure in figures.yaml
+ * @param  {String} historyBehavior replace||push Whether the window history should push to or replace the state
+ * @param  {String} region The canvas region
  */
-const goToFigureState = function ({ annotationIds=[], figureId, region }) {
+const goToFigureState = function ({
+  annotationIds = [],
+  figureId,
+  historyBehavior = 'push',
+  region,
+}) {
   if (!figureId) {
     console.error(`goToFigureState called without an undefined figureId`)
     return
@@ -97,7 +103,12 @@ const goToFigureState = function ({ annotationIds=[], figureId, region }) {
   const paramsString = params.toString()
   const urlParts = [url.pathname]
   if (paramsString) urlParts.push(paramsString)
-  window.history.pushState({}, '', `${urlParts.join('?')}${url.hash}`)
+  const historyArgs = [{}, '', `${urlParts.join('?')}${url.hash}`]
+  if (historyBehavior === 'replace') {
+    window.history.replaceState(...historyArgs)
+  } else {
+    window.history.pushState(...historyArgs)
+  }
 }
 
 /**
@@ -202,7 +213,13 @@ const setUpUIEventHandlers = () => {
 
     const onscroll = annoRef.getAttribute('data-on-scroll')
     if (onscroll === 'true') {
-      const callback = () => goToFigureState({ annotationIds, figureId, region })
+      const callback = () =>
+        goToFigureState({
+          annotationIds,
+          figureId,
+          historyBehavior: 'replace',
+          region,
+        })
       intersectionObserverFactory(annoRef, callback)
     } else {
       annoRef.addEventListener('click', ({ target }) =>
