@@ -51,9 +51,21 @@ const handleSequenceNavigation = ({ clientX, target }) => {
     setSequenceIndex,
     totalCanvases
   } = sequence
-  if (currentSequenceIndex === totalCanvases) setSequenceIndex(0)
-  if (clientX < oldX) previousCanvas()
-  if (clientX > oldX) nextCanvas()
+  const draggingLeft = clientX < oldX
+  const draggingRight = clientX > oldX
+  if (draggingLeft) {
+    if (currentSequenceIndex === 0) {
+      setSequenceIndex(totalCanvases - 1)
+    } else {
+      previousCanvas()
+    }
+  } else if (draggingRight) {
+    if (currentSequenceIndex === totalCanvases - 1) {
+      setSequenceIndex(0)
+    } else {
+      nextCanvas()
+    }
+  }
 }
 
 const handleMouseMove = (event) => {
@@ -61,7 +73,7 @@ const handleMouseMove = (event) => {
   oldX = event.clientX
 }
 
-const debouncedMouseMove = debounce(handleMouseMove, 10, true)
+const debouncedMouseMove = debounce(handleMouseMove, 5, true)
 
 const handleMouseDown = ({ clientX }) => {
   oldX = clientX
