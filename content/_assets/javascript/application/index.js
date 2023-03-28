@@ -345,7 +345,7 @@ window.addEventListener('load', () => {
   scrollToHash(window.location.hash, 75, 'swing')
   const params = parseQueryParams()
   /**
-   * Canvas/Sequence Panel Setup
+   * Canvas Panel Setup
    */
   setUpUIEventHandlers()
   if (window.location.hash) goToFigureState({
