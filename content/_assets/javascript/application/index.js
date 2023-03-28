@@ -15,7 +15,6 @@ import '../../styles/custom.css'
 import './canvas-panel'
 import './soundcloud-api.min.js'
 import * as canvasPanel from './canvas-panel'
-import * as sequencePanel from './sequence-panel'
 import Search from '../../../../_plugins/search/search.js'
 import scrollToHash from './scroll-to-hash'
 
@@ -349,7 +348,6 @@ window.addEventListener('load', () => {
    * Canvas/Sequence Panel Setup
    */
   canvasPanel.setUpUIEventHandlers()
-  sequencePanel.setUpUIEventHandlers()
   if (window.location.hash) canvasPanel.goToFigureState({
     figureId: window.location.hash.replace(/^#/, ''),
     annotationIds: params['annotation-id'],
