@@ -15,7 +15,7 @@
   }
 
   .q-lightbox-slides__slide {
-    transform: translateY(-100%);
+    transform: translateY(100%);
     opacity: 0;
     transition: transform 0s 0.4s, opacity 0.4s linear;
 

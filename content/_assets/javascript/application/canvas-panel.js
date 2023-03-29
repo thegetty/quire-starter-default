@@ -22,13 +22,18 @@ const annotationData = (input) => {
  */
 const getServiceId = (element) => {
   const canvasPanel = element.querySelector('canvas-panel')
+  const imageSequence = element.querySelector('image-sequence')
   const imageService = element.querySelector('image-service')
+
   if (canvasPanel) {
     return canvasPanel.getAttribute('canvas-id')
   } else if (imageService) {
     return imageService.getAttribute('src')
+  } else if (imageSequence) {
+    return imageSequence.getAttribute('sequence-id')
   } else {
     console.error(`Element does not contain a canvas panel or image service component:`, element)
+    return
   }
 }
 
@@ -53,7 +58,7 @@ const getTarget = (region) => {
  * @param  {Array} annotationIds  The IIIF ids of the annotations to select
  * @param  {String} region      The canvas region
  */
-const goToFigureState = function ({ annotationIds=[], figureId, region }) {
+const goToFigureState = function ({ annotationIds=[], figureId, index, region }) {
   if (!figureId) {
     console.error(`goToFigureState called without an undefined figureId`)
     return
@@ -81,7 +86,7 @@ const goToFigureState = function ({ annotationIds=[], figureId, region }) {
   /**
    * Update figure state
    */
-  update(serviceId, { annotations, region: region || 'reset' })
+  update(serviceId, { annotations, index, region })
 
   /**
    * Build URL
@@ -155,7 +160,7 @@ const selectAnnotation = (canvasPanel, annotation) => {
     case 'choice':
       /**
        * `canvasPanel.makeChoice` is defined asynchronously on the web component,
-       * and while the event model emits a 'choice' event when a choice is selected, it is noisy, 
+       * and while the event model emits a 'choice' event when a choice is selected, it is noisy,
        * and since there is no 'done' event to indicate when this method is available,
        * we will use polling
        */
@@ -194,19 +199,20 @@ const setUpUIEventHandlers = () => {
     let annotationIds = annoRef.getAttribute('data-annotation-ids')
     annotationIds = annotationIds.length ? annotationIds.split(',') : undefined
     const figureId = annoRef.getAttribute('data-figure-id')
+    const index = annoRef.getAttribute('data-index')
     /**
      * Annoref shortcode resets the region if none is provided
      */
     const region = annoRef.getAttribute('data-region')
-    annoRef.addEventListener('click', ({ target }) =>
-      goToFigureState({ annotationIds, figureId, region })
-    )
+    annoRef.addEventListener('click', ({ target }) => {
+      goToFigureState({ annotationIds, figureId, index, region })
+    })
   }
 
   /**
    * Add click handlers to UI inputs
    */
-  const inputs = document.querySelectorAll('.annotations-ui__input')  
+  const inputs = document.querySelectorAll('.annotations-ui__input')
   for (const input of inputs) {
     handleSelect(input)
     input.addEventListener('click', ({ target }) => handleSelect(target))
@@ -215,25 +221,29 @@ const setUpUIEventHandlers = () => {
 
 /**
  * Update canvas panel or image-service properties
- * 
+ *
  * @param  {String} id Canvas ID or path to image-service info.json
  * @param  {Object} data
  * @property {String} region comma-separated, @example "x,y,width,height"
  * @property {Array<Object>} annotations
  */
 const update = (id, data) => {
-  const webComponents = document.querySelectorAll(`canvas-panel[canvas-id="${id}"], image-service[src="${id}"]`)
+  const webComponents = document.querySelectorAll(`canvas-panel[canvas-id="${id}"], image-service[src="${id}"], image-sequence[sequence-id="${id}"]`)
   if (!webComponents.length) {
     console.error(`Failed to call update on canvas panel or image-service component with id ${id}. Element does not exist.`)
   }
-  const { annotations, region } = data
+  const { annotations, index, region } = data
   webComponents.forEach((element) => {
 
-    if (region) {
-      const target =
-        region === 'reset'
-          ? getTarget(element.getAttribute('region'))
-          : getTarget(region)
+    const isImageSequence = element.tagName.toLowerCase() === 'image-sequence'
+    if (index && isImageSequence) {
+      element.setAttribute('index', index)
+    }
+
+    if (region && !isImageSequence) {
+      const target = region && region !== 'reset'
+        ? getTarget(region)
+        : getTarget(element.getAttribute('region'))
       element.transition(tm => {
         tm.goToRegion(target, {
           transition: {

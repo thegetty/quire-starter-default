@@ -190,7 +190,7 @@ function loadSearchData() {
 
 /**
  * Applies MLA format to date
- * 
+ *
  * @param  {Date}   date   javascript date object
  * @return {String}        MLA formatted date
  */
@@ -348,7 +348,7 @@ window.addEventListener('load', () => {
    * Canvas Panel Setup
    */
   setUpUIEventHandlers()
-  goToFigureState({
+  if (window.location.hash) goToFigureState({
     figureId: window.location.hash.replace(/^#/, ''),
     annotationIds: params['annotation-id'],
     region: params['region'] ? params['region'][0] : null
