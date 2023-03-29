@@ -22,8 +22,8 @@ const annotationData = (input) => {
  */
 const getServiceId = (element) => {
   const canvasPanel = element.querySelector('canvas-panel')
-  const imageService = element.querySelector('image-service')
   const imageSequence = element.querySelector('image-sequence')
+  const imageService = element.querySelector('image-service')
 
   if (canvasPanel) {
     return canvasPanel.getAttribute('canvas-id')
