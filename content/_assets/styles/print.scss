@@ -260,7 +260,8 @@ $print-trim: $print-bleed * 2;
   }
 
   .half-title-page,
-  .title-page {
+  .title-page,
+  .copyright-page {
     page: no-footer;
   }
 
