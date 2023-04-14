@@ -42,7 +42,14 @@ html {
 // .quire-page
 // -----------------------------------------------------------------------------
 .quire-page {
-  min-height: calc(100vh - #{$navbar-height} - #{$quire-progress-bar-height});
+
+  @media screen {
+    min-height: calc(100vh - #{$navbar-height} - #{$quire-progress-bar-height});
+  }
+  @media print {
+    min-height: calc($print-height - $print-top-margin - $print-bottom-margin);
+    page-break-before: always;
+  }
 
   h1,
   h2,
