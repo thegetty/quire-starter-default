@@ -71,7 +71,7 @@ $print-text-color: $black;
 
 $print-splash-color: $off-white;
 
-$print-entry-image-color: $rich-black;
+$print-entry-image-color: $black; // or can use $rich-black with PrinceXML
 $print-entry-caption-color: $white;
 $print-entry-image-display: all; // first | all
 
