@@ -283,13 +283,13 @@ $print-trim: $print-bleed * 2;
     page: frontmatter-splash;
   }
 
-  .quire-entry__image {
-    .quire-entry__image__group-container {
-      figure {
+  .quire-entry {
+    .quire-entry__image-wrap {
+      .q-figure {
         page: entry-image;
-        }
       }
     }
+  }
 
   .quire-contents {
     page: no-footer;
@@ -422,35 +422,52 @@ $print-trim: $print-bleed * 2;
 
 // Entry image pages
 // -----------------------------------------------------------------------------
-  $print-entry-image-width: $print-width - $print-inner-margin - $print-outer-margin;
   $print-entry-image-height: $print-height - $print-top-margin - $print-bottom-margin;
-  $print-entry-image-max-height: $print-entry-image-height - 1in;
+  $print-entry-image-width: $print-width - $print-inner-margin - $print-outer-margin;
 
-  // @todo determine why below with `&` was failing in webpack
-  // .quire-entry__image & figure {
-  .quire-entry__image-wrap figure {
+  .quire-entry__image-wrap .q-figure {
+    align-items: center;
+    border-width: 0px;
     display: flex;
     flex-direction: column;
     height: $print-entry-image-height;
-    margin-bottom: .5in;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
     @if $print-entry-image-display == first {
       display: none;
-      &:first-of-type {
-        display: block;
+      &:first-child {
+        display: flex;
       }
     }
-    break-after: page;
-    .q-figure__media-fallback {
-      .q-figure__wrapper {
-        width: auto;
-        height: auto;
-      }
+    // make the img, or the div > img for video poster images
+    // fill but not exceed the space remaining from the caption
+    > :first-child {
+      flex-grow: 1;
+      height: 0;
+      object-fit: contain;
+      width: auto;
+    }
+    // align the poster image within its parent div
+    > div {
+      align-items: center;
+      display: flex;
       img {
         max-width: $print-entry-image-width;
-        max-height: $print-entry-image-max-height;
-        margin: 0 auto;
-        object-fit: contain;
+      }
+    }
+    .q-figure__caption {
+      color: $print-entry-caption-color;
+      font-size: .75rem;
+      margin-top: .5rem;
+      max-width: $print-base-text-column-width;
+      &-embed-link a {
+        color: $print-entry-caption-color;
         display: block;
+        margin-bottom: .5rem;
+      }
+      .q-figure__modal-link {
+        color: $print-entry-caption-color;
       }
     }
   }
