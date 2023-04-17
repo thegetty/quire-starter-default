@@ -189,6 +189,7 @@ $print-trim: $print-bleed * 2;
   }
   h2, h3, h4, h5, h6 {
     prince-bookmark-level: none;
+    page-break-after: avoid;
   }
 
 // Generated content for footers and page #s in TOC
