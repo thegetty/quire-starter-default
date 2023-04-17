@@ -116,6 +116,11 @@
   
   &__bio {
     line-height: inherit;
+    @media print {
+      + ul {
+        display: none;
+      }
+    }
   }
 
   &__details {
@@ -123,9 +128,5 @@
     p {
       margin-bottom: .5rem !important;
     }
-  }
-  
-  &__page-link {
-    @media print { display: none; }
   }
 }
