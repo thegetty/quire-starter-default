@@ -719,7 +719,7 @@ html {
         color: $print-text-color;
         border-bottom-width: 0;
       }
-      line-height: 1.6;
+      line-height: inherit;
       @if $theme == classic {
         color: background-color-text-classic($content-background-color);
         border-bottom: 1px
