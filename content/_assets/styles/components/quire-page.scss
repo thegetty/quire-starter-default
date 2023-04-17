@@ -216,6 +216,10 @@ html {
 
         table {
           margin: 2em 0;
+          thead,
+          tbody {
+            text-align: left;
+          }
           td,
           th {
             color: background-color-text($content-background-color);
@@ -224,6 +228,9 @@ html {
             }
             border-width: 0 0 1px;
           }
+        }
+        .q-figure table {
+          margin: 0;
         }
 
         ul {
