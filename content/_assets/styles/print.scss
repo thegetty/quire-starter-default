@@ -389,8 +389,10 @@ $print-trim: $print-bleed * 2;
       width: $menu-grid-item-width;
       height: 2.5in;
       margin-bottom: $menu-grid-gap;
-      background-color: $print-splash-color;
-      padding: 1em;
+      @if $theme == modern {
+        background-color: $print-splash-color;
+        padding: 1em;
+      }
       position: relative;
       * {
         margin: 0;
