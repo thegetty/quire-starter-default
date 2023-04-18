@@ -165,12 +165,6 @@ $print-trim: $print-bleed * 2;
     }
   }
 
-  @page page-one:first {
-    @bottom-left {
-      content: none;
-    }
-  }
-
   @page :blank {
     @bottom-left {
       content: none;
