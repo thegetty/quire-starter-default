@@ -33,17 +33,20 @@
   --atlas-z-index: 0;
 
   &:not(.q-figure--group__item) {
-    border-top: 1px solid $accent-color;
-    border-bottom: 1px solid $accent-color;
-    padding: 1rem 0;
     margin-top: 0.5em;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  @if $theme == classic {
-    border: none;
-    padding: 0;
+    @if $theme == modern {
+      border-top: 1px solid $accent-color;
+      border-bottom: 1px solid $accent-color;
+      padding: 1rem 0;
+    } @else {
+      // figures shouldn't have borders or padding in 'classic' theme
+      // transparent border is to get around a bug with paged.js output
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+      padding: 0;
+    }
   }
 
   > a {
@@ -86,7 +89,9 @@
     }
     table {
       caption {
-        color: $accent-color;
+        @if $theme == modern {
+          color: $accent-color;
+        }
         font-size: 1rem;
         margin: 0 1rem 1rem;
       }
@@ -165,16 +170,18 @@
   }
 
   &__label {
-    @if $theme == classic {
-      color: background-color-text-classic($content-background-color);
-    } @else {
-      color: $accent-color;
-    }
     display: inline-block;
     height: 0;
     font-weight: 700;
     line-height: 0;
     margin-right: .5rem;
+    a {
+      @if $theme == classic {
+        color: background-color-text-classic($content-background-color);
+      } @else {
+        color: $accent-color;
+      }
+    }
     .q-figure__label-icon {
       display: inline-block;
       line-height: 1;
@@ -561,8 +568,10 @@ div.multimedia {
 
   .q-figure__label--below & {
     display: inline;
-    color: $accent-color;
-    transition: color 0.35s;
+    @if $theme == modern {
+      color: $accent-color;
+      transition: color 0.35s;
+    }
 
     &:hover {
       color: link-hover-color($content-background-color);
