@@ -49,6 +49,9 @@ html {
   @media print {
     min-height: calc($print-height - $print-top-margin - $print-bottom-margin);
     page-break-before: always;
+    // enable use of :first page selector on all @pages
+    // https://www.princexml.com/doc/paged/#page-groups
+    prince-page-group: start;
   }
 
   h1,
