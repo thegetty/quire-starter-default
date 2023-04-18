@@ -12,14 +12,10 @@
 
 // Variables (others in the variables.scss file)
 // -----------------------------------------------------------------------------
-$print-base-text-column-width: 4.75in;
+$print-base-text-column-width: ($print-width - $print-inner-margin - $print-outer-margin) * .7;
 
 @if $print-width <= 7 {
-  $print-inner-margin: $print-width - $print-base-text-column-width - $print-outer-margin;
-}
-
-@if $print-height <= 10 {
-  $print-top-margin: 0.5in;
+  $print-base-text-column-width: $print-width - $print-inner-margin - $print-outer-margin;
 }
 
 $print-footer-font: $quire-headings-font;
