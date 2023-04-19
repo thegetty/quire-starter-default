@@ -1,3 +1,7 @@
+accordion:
+  button: §
+  controls: plus-minus # arrow | plus-minus
+
 analytics:
   googleId: ''
 
