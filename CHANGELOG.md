@@ -13,5 +13,8 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
-[2.0.0]
-- Removed `content/_assets/javascript/` and `content/_computed/eleventyComputed.js`
+## [2.0.0]
+
+### Removed
+
+Removed `content/_assets/javascript/` and `content/_computed/eleventyComputed.js` which are now committed to the main `quire` repository.
