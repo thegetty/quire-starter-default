@@ -62,6 +62,10 @@ html {
     @media print {
       color: $print-text-color;
     }
+    font-family: $quire-headings-font;
+    @if $quire-headings-font == $ibm-sans {
+      letter-spacing: -0.025em;
+    }
 
     &:not(:first-child) {
       margin-top: 1rem;
