@@ -61,7 +61,7 @@ html {
   h5,
   h6 {
     margin-bottom: 1rem;
-    color: background-color-text($secondary-background-color);
+    color: background-color-text-classic($secondary-background-color);
     @media print {
       color: $print-text-color;
     }
@@ -107,7 +107,6 @@ html {
     font-weight: 400;
     font-style: italic;
     margin-top: 3rem;
-    opacity: 0.75;
     font-size: 1em;
     em {
       font-style: normal;
@@ -229,7 +228,7 @@ html {
           }
           td,
           th {
-            color: background-color-text($content-background-color);
+            color: background-color-text-classic($content-background-color);
             @media print {
               color: $print-text-color;
             }
@@ -295,7 +294,7 @@ html {
             @media screen {
               &:first-child:before {
                 @if (lightness($content-background-color) < 50) {
-                  color: background-color-text($content-background-color);
+                  color: background-color-text-classic($content-background-color);
                 } @else if (lightness($secondary-background-color) > 50) {
                   color: darken($secondary-background-color, 15%);
                 } @else {
@@ -313,7 +312,7 @@ html {
                   font-style: normal;
                   font-weight: bold;
                   font-size: 4em;
-                  color: background-color-text($content-background-color);
+                  color: background-color-text-classic($content-background-color);
                   top: 0.45em;
                   left: -0.7em;
                   font-size: 3.125em;
@@ -383,7 +382,7 @@ html {
             letter-spacing: 0;
           }
           .title {
-            color: background-color-text($content-background-color);
+            color: background-color-text-classic($content-background-color);
             @media print {
               color: $print-text-color;
             }
@@ -528,7 +527,7 @@ html {
   // }
 
   background-color: $secondary-background-color;
-  color: background-color-text($secondary-background-color);
+  color: background-color-text-classic($secondary-background-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: cover;
@@ -655,15 +654,15 @@ html {
     background-color: transparent;
     .hero-body {
       .quire-page__header__title {
-        color: background-color-text($secondary-background-color);
+        color: background-color-text-classic($secondary-background-color);
         @media print {
-          color: background-color-text($print-splash-color);
+          color: background-color-text-classic($print-splash-color);
         }
       }
       .label {
-        color: background-color-text($secondary-background-color);
+        color: background-color-text-classic($secondary-background-color);
         @media print {
-          color: background-color-text($print-splash-color);
+          color: background-color-text-classic($print-splash-color);
         }
       }
     }
@@ -737,7 +736,7 @@ html {
 
       &:focus {
         background-color: $quire-hover-color;
-        color: background-color-text($quire-hover-color) !important;
+        color: background-color-text-classic($quire-hover-color) !important;
       }
     }
 
@@ -786,7 +785,7 @@ html {
       tr {
         &:hover {
           background-color: $quire-hover-color;
-          color: background-color-text($quire-hover-color) !important;
+          color: background-color-text-classic($quire-hover-color) !important;
         }
       }
     }
