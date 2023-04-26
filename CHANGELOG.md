@@ -13,7 +13,7 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
-## [1.3.0]
+## [2.1.0]
 
 ### Added
 
@@ -23,6 +23,12 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 
 * Background color of entry pages in the PDF (noting that paged.js doesn't support cmyk colors, while PrinceXML does)
 * CSS styles for entry page figure captions in the PDF
+
+## [2.0.0]
+
+### Removed
+
+- Javascript and `eleventyComputed.js` which are now committed to the `quire` repository.
 
 ## [1.2.0]
 
