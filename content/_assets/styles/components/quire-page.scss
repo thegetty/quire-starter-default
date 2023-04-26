@@ -674,34 +674,18 @@ html {
       @media print {
         background-color: transparent;
       }
-    }
-    p {
-      &:first-child {
-        &:first-letter {
-          font-size: 9em;
-          float: left;
-          margin-top: 0;
-          margin-left: -0.09em;
-          padding-right: 0.025em;
-          line-height: 0.85em;
-        }
-      }
-    }
-  }
-}
-
-@supports (-moz-appearance: none) {
-  .quire-splash {
-    .quire-page__content {
-      p {
+      > p {
         &:first-child {
           &:first-letter {
             font-size: 9em;
             float: left;
-            margin-top: 0.1em !important;
+            margin-top: 0;
             margin-left: -0.09em;
             padding-right: 0.025em;
             line-height: 0.85em;
+            @supports (-moz-appearance: none) {
+              margin-top: 0.1em !important;
+            }
           }
         }
       }
