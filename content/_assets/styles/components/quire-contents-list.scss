@@ -64,15 +64,15 @@
     width: 100%;
     &.page-item {
       .title {
-        font-size: $quire-base-font-size;
+        font-size: 1rem;
         a {
-          font-size: $quire-base-font-size;
+          font-size: 1rem;
         }
       }
       .abstract-text {
-        font-size: $quire-base-font-size * 0.875;
+        font-size: 0.875rem;
         @media print {
-          font-size: $print-base-font-size;
+          font-size: 1rem;
         }
       }
     }
@@ -95,14 +95,14 @@
   }
 
   .menu-list {
-    font-size: $quire-base-font-size;
+    font-size: 1rem;
     a {
       padding: 0;
     }
 
     .section-header {
       text-align: center;
-      font-size: $quire-base-font-size !important;
+      font-size: 1rem !important;
       border-top: 1px solid background-color($content-background-color);
       padding-top: 3.3375em;
       margin-bottom: 0;
@@ -161,7 +161,7 @@
       font-family: $quire-headings-font;
       color: background-color-text($secondary-background-color);
       @media print {
-        font-size: $print-base-font-size;
+        font-size: 1rem;
         color: $print-text-color;
       }
     }
@@ -182,7 +182,7 @@
       padding-right: 0;
       font-size: 1.375em;
       @media print {
-        font-size: $print-base-font-size;
+        font-size: 1rem;
         color: $print-text-color;
       }
       -webkit-transition: all .25s ease;
@@ -267,7 +267,7 @@
     .abstract-text {
       font-size: 0.875em;
       @media print {
-        font-size: $print-base-font-size;
+        font-size: 1rem;
       }
       line-height: 1.5em;
       margin-top: 0.375rem;
@@ -292,7 +292,7 @@
       }
       .abstract-text {
         @media print {
-          font-size: $print-base-font-size;
+          font-size: 1rem;
         }
       }
     }
@@ -473,7 +473,7 @@
     ol li {
       float: left;
       width: 100%;
-      font-size: $quire-base-font-size;
+      font-size: 1rem;
 
       @media screen and (min-width: $desktop) {
         width: 50%;
@@ -545,14 +545,14 @@
       }
 
       .card.image {
-        font-size: $quire-base-font-size;
+        font-size: 1rem;
         .card-content {
           font-size: 1.125em;
           padding: 1.5em;
         }
       }
       .card.no-image {
-        font-size: $quire-base-font-size;
+        font-size: 1rem;
         .card-content {
           font-size: 2rem;
           @media print {
@@ -569,7 +569,7 @@
       }
 
       a {
-        font-size: $quire-base-font-size;
+        font-size: 1rem;
       }
 
       .card-content {
