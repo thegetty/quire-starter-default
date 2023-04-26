@@ -17,4 +17,9 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 
 ### Removed
 
-Removed `content/_assets/javascript/` and `content/_computed/eleventyComputed.js` which are now committed to the main `quire` repository.
+- Javascript and `eleventyComputed.js` which are now committed to the `quire` repository.
+
+## 1.1.0
+
+- Fixed styles for headings and the page height for the PDF outputs.
+- Changed location of SCSS variables for pdf margins to variables.scss file

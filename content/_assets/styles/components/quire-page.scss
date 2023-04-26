@@ -42,7 +42,14 @@ html {
 // .quire-page
 // -----------------------------------------------------------------------------
 .quire-page {
-  min-height: calc(100vh - #{$navbar-height} - #{$quire-progress-bar-height});
+
+  @media screen {
+    min-height: calc(100vh - #{$navbar-height} - #{$quire-progress-bar-height});
+  }
+  @media print {
+    min-height: calc($print-height - $print-top-margin - $print-bottom-margin);
+    page-break-before: always;
+  }
 
   h1,
   h2,
@@ -54,6 +61,10 @@ html {
     color: background-color-text($secondary-background-color);
     @media print {
       color: $print-text-color;
+    }
+    font-family: $quire-headings-font;
+    @if $quire-headings-font == $ibm-sans {
+      letter-spacing: -0.025em;
     }
 
     &:not(:first-child) {
