@@ -165,12 +165,6 @@ $print-trim: $print-bleed * 2;
     }
   }
 
-  @page page-one:first {
-    @bottom-left {
-      content: none;
-    }
-  }
-
   @page :blank {
     @bottom-left {
       content: none;
@@ -191,32 +185,52 @@ $print-trim: $print-bleed * 2;
 // Generated content for footers and page #s in TOC
 // -----------------------------------------------------------------------------
   .quire-page {
-    string-set: pagetitle attr(data-footer-page-title);
+    string-set: pagetitle attr(data-footer-page-title), sectiontitle attr(data-footer-section-title);
   }
 
-  .quire-page {
-    string-set: sectiontitle attr(data-footer-section-title);
-  }
-
+  // Adds page numbering with dotted leaders in PrinceXML
+  // uses .pagedjs_pages class to handle fallback in Paged.js
   .quire-contents-list {
+    .section-item > a {
+      max-width: 90%;
+    }
+    .section-item > a::after {
+      content: leader(dotted) ' 'target-counter(attr(href, url), page);
+      margin-left: 6pt;
+      margin-right: -10%;
+      .pagedjs_pages & {
+        content: target-counter(attr(href), page);
+        float: right;
+      }
+    }
+    .section-item.frontmatter-page > a::after {
+      content: leader(dotted) ' 'target-counter(attr(href, url), page, lower-roman);
+      font-style: italic;
+      .pagedjs_pages & {
+        content: target-counter(attr(href), page, lower-roman);
+        float: right;
+      }
+    }
     .page-item {
       max-width: 90%;
       a::after {
-        content: target-counter(attr(href), page);
+        content: leader(dotted) ' 'target-counter(attr(href, url), page);
         margin-left: 6pt;
         margin-right: -10%;
-        // This border is a hack for PrinceXML which doesn't
-        // otherwise recognize the box sizing for some reason
-        border: 1pt solid transparent;
+        .pagedjs_pages & {
+          content: target-counter(attr(href), page);
+          float: right;
+        }
       }
-      &.frontmatter-page a::after {
-        content: target-counter(attr(href), page, lower-roman);
+      &.frontmatter-page > a::after {
+        content: leader(dotted) ' 'target-counter(attr(href, url), page, lower-roman);
         font-style: italic;
         margin-left: 6pt;
         margin-right: -10%;
-        // This border is a hack for PrinceXML which doesn't
-        // otherwise recognize the box sizing for some reason
-        border: 1pt solid transparent;
+        .pagedjs_pages & {
+          content: target-counter(attr(href), page, lower-roman);
+          float: right;
+        }
       }
     }
     &.grid {
