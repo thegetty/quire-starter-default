@@ -13,9 +13,26 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
-[1.0.0-pre-release]
+## [1.2.0]
 
-## 1.1.0
+### Added
 
-* Fixed styles for headings and the page height for the PDF outputs.
-- Changed location of SCSS variables for pdf margins to variables.scss file
+- Dotted leaders in table of contents for PrinceXML
+
+### Fixed
+
+* Use of base-font-size variables
+* Page footers in PDF
+
+## [1.1.0]
+
+### Changed
+
+* Location of SCSS variables for pdf margins
+
+### Fixed
+
+* CSS styles for headings
+* Page height for the PDF outputs
+
+## [1.0.0-pre-release]
