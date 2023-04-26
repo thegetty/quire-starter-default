@@ -86,6 +86,7 @@
     }
     table {
       caption {
+        color: $accent-color;
         font-size: 1rem;
         margin: 0 1rem 1rem;
       }
@@ -159,7 +160,7 @@
     }
     user-select: text;
     a {
-      line-height: 1.5;
+      line-height: 0;
     }
   }
 
@@ -172,6 +173,7 @@
     display: inline-block;
     height: 0;
     font-weight: 700;
+    line-height: 0;
     margin-right: .5rem;
     .q-figure__label-icon {
       display: inline-block;
