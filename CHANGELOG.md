@@ -15,9 +15,14 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 
 ## [1.3.0]
 
+### Added
+
+- CSS styles to ensure entry images and captions stay on the same PDF page, no matter their size
+
 ### Fixed
 
-* Display of main images on entry pages in PDF
+* Background color of entry pages in the PDF (noting that paged.js doesn't support cmyk colors, while PrinceXML does)
+* CSS styles for entry page figure captions in the PDF
 
 ## [1.2.0]
 
