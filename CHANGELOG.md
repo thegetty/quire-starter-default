@@ -13,6 +13,16 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.3.0]
+
+### Fixed
+
+* Handling of text and background colors between classic and modern themes
+
+### Removed
+
+- Figure borders for classic theme
+
 ## [2.2.0]
 
 ### Fixed
