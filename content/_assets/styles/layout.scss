@@ -33,18 +33,6 @@
 .quire {
   width: 100%;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $quire-headings-font;
-    @if $quire-headings-font == $ibm-sans {
-      letter-spacing: -0.025em;
-    }
-  }
-
   // Styles used whether JS is enabled or not
   main {
     background-color: $secondary-background-color;
@@ -173,14 +161,6 @@
         }
       }
     }
-  }
-
-  .is-pulled-right {
-    float: right;
-  }
-
-  .is-pulled-left {
-    float: left;
   }
 }
 

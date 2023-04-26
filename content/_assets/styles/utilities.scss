@@ -151,6 +151,14 @@ sub {
   }
 }
 
+.is-pulled-right {
+  float: right;
+}
+
+.is-pulled-left {
+  float: left;
+}
+
 .overflow-container {
   overflow: scroll;
   box-sizing: border-box;

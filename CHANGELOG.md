@@ -14,3 +14,8 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 - `Removed`: for deprecated features removed in this release
 
 [1.0.0-pre-release]
+
+## 1.1.0
+
+* Fixed styles for headings and the page height for the PDF outputs.
+- Changed location of SCSS variables for pdf margins to variables.scss file
