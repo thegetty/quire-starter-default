@@ -13,6 +13,17 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.4.0]
+
+### Fixed
+
+- Copyright page layout and styles
+
+### Removed
+
+- Page number on copyright page 
+- About page from PDF and EPUB output
+
 ## [2.3.0]
 
 ### Fixed

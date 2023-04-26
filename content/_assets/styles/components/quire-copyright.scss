@@ -8,8 +8,7 @@
 // .quire-copyright
 // -----------------------------------------------------------------------------
 .quire-copyright {
-  padding: 0 1em;
-  font-family: $quire-navigation-font;
+  margin-bottom: 1em;
 
   &__icon {
     width: 2.5em;
@@ -17,6 +16,19 @@
 
     &:not(:first-child) {
       margin-left: 0.4em;
+    }
+
+    &__link {
+      svg {
+        @if $theme == classic {
+          color: $black;
+        } @else {
+          color: $off-black;
+        }
+        &:hover {
+          fill: link-hover-color($content-background-color);
+        }
+      }
     }
   }
   .copyright__publisher-logo {
