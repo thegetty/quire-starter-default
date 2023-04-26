@@ -13,6 +13,16 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.2.0]
+
+### Fixed
+
+* Figure label alignment
+* Line breaks in bulleted lists
+* Table styles
+* Drop caps
+* Line spacing on links
+
 ## [2.1.0]
 
 ### Added

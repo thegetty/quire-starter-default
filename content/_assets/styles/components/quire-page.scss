@@ -223,6 +223,10 @@ html {
 
         table {
           margin: 2em 0;
+          thead,
+          tbody {
+            text-align: left;
+          }
           td,
           th {
             color: background-color-text($content-background-color);
@@ -231,6 +235,9 @@ html {
             }
             border-width: 0 0 1px;
           }
+        }
+        .q-figure table {
+          margin: 0;
         }
 
         ul {
@@ -668,34 +675,18 @@ html {
       @media print {
         background-color: transparent;
       }
-    }
-    p {
-      &:first-child {
-        &:first-letter {
-          font-size: 9em;
-          float: left;
-          margin-top: 0;
-          margin-left: -0.09em;
-          padding-right: 0.025em;
-          line-height: 0.85em;
-        }
-      }
-    }
-  }
-}
-
-@supports (-moz-appearance: none) {
-  .quire-splash {
-    .quire-page__content {
-      p {
+      > p {
         &:first-child {
           &:first-letter {
             font-size: 9em;
             float: left;
-            margin-top: 0.1em !important;
+            margin-top: 0;
             margin-left: -0.09em;
             padding-right: 0.025em;
             line-height: 0.85em;
+            @supports (-moz-appearance: none) {
+              margin-top: 0.1em !important;
+            }
           }
         }
       }
@@ -712,7 +703,7 @@ html {
         color: $print-text-color;
         border-bottom-width: 0;
       }
-      line-height: 1.6;
+      line-height: inherit;
       @if $theme == classic {
         color: background-color-text-classic($content-background-color);
         border-bottom: 1px
