@@ -13,6 +13,12 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [1.3.0]
+
+### Fixed
+
+* Display of main images on entry pages in PDF
+
 ## [1.2.0]
 
 ### Added
