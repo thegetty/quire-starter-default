@@ -1,6 +1,13 @@
 accordion:
-  button: §
   controls: plus-minus # arrow | plus-minus
+  copyButton:
+    ariaLabel: Copy page section link to clipboard
+    text: §
+    copied: Copied page section link to clipboard
+  globalControls:
+    enable: false
+    collapse: Collapse All
+    expand: Expand All
 
 analytics:
   googleId: ''

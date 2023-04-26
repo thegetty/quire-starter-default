@@ -13,4 +13,63 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
-[1.0.0-pre-release]
+## [2.3.0]
+
+### Fixed
+
+* Handling of text and background colors between classic and modern themes
+
+### Removed
+
+- Figure borders for classic theme
+
+## [2.2.0]
+
+### Fixed
+
+* Figure label alignment
+* Line breaks in bulleted lists
+* Table styles
+* Drop caps
+* Line spacing on links
+
+## [2.1.0]
+
+### Added
+
+- CSS styles to ensure entry images and captions stay on the same PDF page, no matter their size
+
+### Fixed
+
+* Background color of entry pages in the PDF (noting that paged.js doesn't support cmyk colors, while PrinceXML does)
+* CSS styles for entry page figure captions in the PDF
+
+## [2.0.0]
+
+### Removed
+
+- Javascript and `eleventyComputed.js` which are now committed to the `quire` repository.
+
+## [1.2.0]
+
+### Added
+
+- Dotted leaders in table of contents for PrinceXML
+
+### Fixed
+
+* Use of base-font-size variables
+* Page footers in PDF
+
+## [1.1.0]
+
+### Changed
+
+* Location of SCSS variables for pdf margins
+
+### Fixed
+
+* CSS styles for headings
+* Page height for the PDF outputs
+
+## [1.0.0-pre-release]
