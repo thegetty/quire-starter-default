@@ -23,8 +23,6 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 
 ### Added
 
-- Fixed styles for headings and the page height for the PDF outputs.
-- Changed location of SCSS variables for pdf margins to variables.scss file
 - Dotted leaders in table of contents for PrinceXML
 
 ### Fixed
