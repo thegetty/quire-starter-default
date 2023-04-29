@@ -1,0 +1,58 @@
+.tooltip {
+    position: relative;
+  }
+  .tooltip:before, .tooltip:after {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    bottom: 0px;
+  }
+  .tooltip:before {
+    content: attr(data-text);
+    margin-left: -15px;
+    transform: translateY(calc(-100% - 1px));
+    width: 275px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    background:black;
+    color: #fff;
+    text-align: center;
+  }
+
+  .tooltip:after {
+    content: "";
+    transform: translateY(-100%);
+    border: 10px solid #000;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:focus:before, .tooltip:focus:after {
+    display: block;
+    animation: fadeIn .25s linear forwards, fadeOut .25s 1.5s linear forwards, disappear .25s 2s linear forwards;
+    -webkit-animation: fadeIn .25s linear forwards, fadeOut .25s 1.5s linear forwards, disappear .25s 2s linear forwards;
+  }
+
+  @-webkit-keyframes fadeIn {
+    100% { opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    100% { opacity: 1; }
+  }
+
+  @-webkit-keyframes fadeOut {
+    100% { opacity: 0; }
+  }
+  
+  @keyframes fadeOut {
+    100% { opacity: 0; }
+  }
+
+  @-webkit-keyframes disappear {
+    100% { margin: 0; border: 0; padding: 0; height: 0; width: 0; }
+  }
+  
+  @keyframes disappear {
+    100% { margin: 0; border: 0; padding: 0; height: 0; width: 0; }
+  }
