@@ -49,6 +49,9 @@
   align-self: center;
   margin-left: 8px;
   font-size: 24px;
+  @media print {
+    display: none;
+  }
 }
 
 .accordion-section__controls--arrow:after {
