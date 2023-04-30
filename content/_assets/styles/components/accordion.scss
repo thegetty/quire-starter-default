@@ -37,11 +37,11 @@
 
 .accordion-section__heading:hover .accordion-section__copy-link-button {
   color: $accent-color;
+  &:hover {
+    color: darken($accent-color, 15%);
+  }
   &:active {
     color: $print-text-color;
-  }
-  &:hover {
-    color: darken($accent-color, 10%);
   }
 }
 
@@ -76,6 +76,17 @@
 
 .accordion-section__body > p {
   margin-bottom: 20px;
+}
+
+.accordion-section__copy-link-button {
+  &.tooltip:focus {
+    &:before,
+    &:after {
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
+    }
+  }
 }
 
 .global-accordion-controls {
