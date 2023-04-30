@@ -77,3 +77,22 @@
 .accordion-section__body > p {
   margin-bottom: 20px;
 }
+
+.global-accordion-controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    color: $accent-color;
+    text-decoration: underline;
+    margin-top: 6px;
+  }
+  button:hover {
+    text-decoration: none;
+  }
+}
