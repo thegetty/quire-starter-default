@@ -1,5 +1,5 @@
 accordion:
-  controls: plus-minus # arrow | plus-minus
+  controls: arrow # arrow | plus-minus
   copyButton:
     ariaLabel: Copy page section link to clipboard
     text: §
