@@ -1,3 +1,6 @@
+$controls-width: 18px;
+$controls-margin: 10px;
+
 .quire-page .accordion-section .accordion-section__heading {
   & > h1,
   & > h2,
@@ -10,24 +13,97 @@
   }
 }
 
+.accordion-section__copy-link-button:has(+ h1),
+.accordion-section__controls:has(h1):after {
+  height: 55px;
+  line-height: 1.15;
+}
+
+.accordion-section__copy-link-button:has(+ h1) {
+  font-size: 28px;
+  left: -24px;
+  width: 22px;
+}
+
+.accordion-section__controls:has(h1):after {
+  font-size: 30px;
+}
+
+.accordion-section__copy-link-button:has(+ h2),
+.accordion-section__controls:has(h2):after {
+  height: 32px;
+  line-height: 1.15;
+}
+
+.accordion-section__copy-link-button:has(+ h2) {
+  font-size: 20px;
+  left: -22px;
+  width: 20px;
+}
+
+.accordion-section__controls:has(h2):after {
+  font-size: 22px;
+}
+
+.accordion-section__copy-link-button:has(+ h3),
+.accordion-section__controls:has(h3):after {
+  height: 30px;
+  line-height: 1.25;
+}
+
+.accordion-section__copy-link-button:has(+ h3) {
+  font-size: 18px;
+  left: -22px;
+  width: 20px;
+}
+
+.accordion-section__controls:has(h3):after {
+  font-size: 20px;
+}
+
+.accordion-section__copy-link-button:has(+ h4, + h5, + h6),
+.accordion-section__controls:has(h4, h5, h6):after {
+  height: 28px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.accordion-section__copy-link-button:has(+ h4, + h5, + h6) {
+  left: -20px;
+  width: 18px;
+}
+
+.accordion-section__controls:has(h4, h5, h6):after {
+  font-size: 20px;
+}
+
 .accordion-section__heading {
   margin-top: 16px;
   margin-bottom: 16px;
   line-height: 1;
   list-style: none;
   display: flex;
+  position: relative;
   cursor: pointer;
   &::-webkit-details-marker {
     display: none;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: calc(100% - calc($controls-width + $controls-margin));
+  }
+}
+
+.accordion-section__copy-link-button.tooltip {
+  position: absolute;
 }
 
 .accordion-section__copy-link-button {
   cursor: pointer;
-  margin-left: -20px;
-  margin-bottom: 3px;
-  width: 20px;
-  font-size: 20px;
   background: none;
   color: transparent;
   border: none;
@@ -46,8 +122,10 @@
 }
 
 .accordion-section__controls:after {
-  align-self: center;
-  margin-left: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: $controls-margin;
   font-size: 24px;
   @media print {
     display: none;
@@ -56,9 +134,11 @@
 
 .accordion-section__controls--arrow:after {
   content: "";
-  width: 18px;
-  height: 18px;
-  background-size: 18px;
+  width: $controls-width;
+  height: $controls-width;
+  background-size: $controls-width;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(0);
   transition: 0.25s transform ease;
