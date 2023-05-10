@@ -162,8 +162,7 @@ $controls-margin: 10px;
 }
 
 .accordion-section__copy-link-button {
-  &.tooltip:focus {
-    &:before,
+  &.accordion-tooltip--active {
     &:after {
       @media screen and (max-width: $tablet) {
         display: none;
@@ -172,27 +171,7 @@ $controls-margin: 10px;
   }
 }
 
-.global-accordion-controls {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  button {
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 0;
-    outline: inherit;
-    color: $accent-color;
-    text-decoration: underline;
-    margin-top: 6px;
-  }
-  button:hover {
-    text-decoration: none;
-  }
-}
-
 .accordion-tooltip::after {
-  cursor: default;
   content: attr(data-text);
   position: absolute;
   display: none;
@@ -206,11 +185,11 @@ $controls-margin: 10px;
   padding: 0;
 }
 
-.accordion-tooltip:focus::after {
+.accordion-tooltip--active::after {
   padding: 10px 10px 20px 10px;
   display: block;
-  animation: fade 2s linear, disappear 0s 2s linear forwards;
-  -webkit-animation: fade 2s linear, disappear 0s 2s linear forwards;
+  animation: fade 2s linear;
+  -webkit-animation: fade 2s linear;
   width: 275px;
   height: auto;
   top: 0;
@@ -230,7 +209,6 @@ $controls-margin: 10px;
   }
 }
 
-
 @keyframes fade {
   0%, 100% { opacity: 0; }
   10%,90% { opacity: 1; }
@@ -243,10 +221,21 @@ $controls-margin: 10px;
   100% { opacity: 0; }
 }
 
-@keyframes disappear {
-  0%,100% { height: 0; width: 0; margin: 0; padding: 0; }
-}
-
-@-webkit-keyframes disappear {
-  0%,100% { height: 0; width: 0; margin: 0; padding: 0; }
+.global-accordion-controls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    color: $accent-color;
+    text-decoration: underline;
+    margin-top: 6px;
+  }
+  button:hover {
+    text-decoration: none;
+  }
 }
