@@ -216,7 +216,8 @@ $controls-margin: 10px;
 .global-accordion-controls {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  align-items: flex-start;
+  margin-bottom: 20px;
   button {
     cursor: pointer;
     background: none;
@@ -225,9 +226,16 @@ $controls-margin: 10px;
     outline: inherit;
     color: $accent-color;
     text-decoration: underline;
-    margin-top: 6px;
+    font-size: 1em;
+    margin-top: 20px;
   }
   button:hover {
     text-decoration: none;
+  }
+}
+.quire-page__header .global-accordion-controls {
+  align-items: center;
+  button {
+    margin-top: 10px;
   }
 }
