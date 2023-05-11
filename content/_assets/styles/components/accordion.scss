@@ -90,7 +90,7 @@ $controls-margin: 10px;
   h4,
   h5,
   h6 {
-    max-width: calc(100% - calc($controls-width + $controls-margin));
+    width: calc(100% - calc($controls-width + $controls-margin));
   }
 }
 
