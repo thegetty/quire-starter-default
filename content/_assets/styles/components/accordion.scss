@@ -1,6 +1,11 @@
 $controls-width: 18px;
 $controls-margin: 10px;
 
+// Summary
+.accordion-section {
+  margin: 1rem 0 1rem 0;
+}
+
 // Heading
 .quire-page .accordion-section .accordion-section__heading {
   & > h1,
@@ -64,8 +69,6 @@ $controls-margin: 10px;
 }
 
 .accordion-section__heading {
-  margin-top: 16px;
-  margin-bottom: 16px;
   line-height: 1;
   list-style: none;
   display: flex;
