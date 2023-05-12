@@ -237,7 +237,6 @@ $controls-margin: 10px;
 // Global Controls
 .global-accordion-controls {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
   button {
@@ -255,7 +254,14 @@ $controls-margin: 10px;
     text-decoration: none;
   }
 }
+
+.content .global-accordion-controls {
+  & button:first-child {
+    margin-right: 10px;
+  }
+}
 .quire-page__header .global-accordion-controls {
+  flex-direction: column;
   align-items: center;
   button {
     margin-top: 10px;
