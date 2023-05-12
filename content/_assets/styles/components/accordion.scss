@@ -1,6 +1,7 @@
 $controls-width: 18px;
 $controls-margin: 10px;
 
+// Heading
 .quire-page .accordion-section .accordion-section__heading {
   & > h1,
   & > h2,
@@ -84,10 +85,7 @@ $controls-margin: 10px;
   }
 }
 
-.accordion-section__copy-link-button.tooltip {
-  position: absolute;
-}
-
+// Copy heading link button
 .accordion-section__copy-link-button {
   cursor: pointer;
   font-family: $quire-headings-font;
@@ -96,24 +94,29 @@ $controls-margin: 10px;
   justify-content: right;
   position: relative;
   width: 20px;
-  margin: 0 4px 0 -24px;
+  margin: 0 2px 0 -22px;
   padding: 0;
   background: none;
-  color: transparent;
   border: none;
   outline: inherit;
+  @media screen and (min-width: $tablet) {
+    color: transparent;
+  }
 }
 
 .accordion-section__heading:hover .accordion-section__copy-link-button {
-  color: $accent-color;
-  &:hover {
-    color: darken($accent-color, 15%);
-  }
-  &:active {
-    color: $print-text-color;
+  @media screen and (min-width: $tablet) {
+    color: $accent-color;
+    &:hover {
+      color: darken($accent-color, 15%);
+    }
+    &:active {
+      color: $print-text-color;
+    }
   }
 }
 
+// Controls
 .accordion-section__controls:after {
   position: relative;
   display: flex;
@@ -153,53 +156,68 @@ $controls-margin: 10px;
   margin-bottom: 20px;
 }
 
-.accordion-section__copy-link-button {
-  &.accordion-tooltip--active {
-    &:after {
-      @media screen and (max-width: $tablet) {
-        display: none;
-      }
+// Tooltip
+.accordion-tooltip {
+  position: absolute;
+  font-family: $quire-navigation-font;
+  font-size: 1em;
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    display: none;
+    font-size: 16px;
+    background: black;
+    color: #fff;
+    margin: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    padding: 0;
+  }
+  &--active:after {
+    padding: 10px 10px 20px 10px;
+    display: block;
+    width: 300px;
+    height: auto;
+    top: 0;
+    left: -8px;
+    transform: translateY(-100%);
+    @media screen and (min-width: $tablet) {
+      animation: fade 2s linear;
+      -webkit-animation: fade 2s linear;
+      clip-path: polygon(
+        0% 0%, // Top left point
+        100% 0%, // Top right point
+        100% calc(100% - 10px), // Bottom right point
+        10px calc(100% - 10px), // Center right of the triangle
+        18px 100%, // Tip of the triangle
+        26px calc(100% - 10px), // Center left of the triangle
+        0% calc(100% - 10px) // Bottom left point
+      );
+    }
+    @media screen and (max-width: $tablet) {
+      position: fixed;
+      width: 100%;
+      top: 100%;
+      padding: 12px;
+      animation: slideInOut 2s linear;
+      -webkit-animation: slideInOut 2s linear;
     }
   }
 }
 
-.accordion-tooltip::after {
-  content: attr(data-text);
-  position: absolute;
-  display: none;
-  font-size: 16px;
-  background: black;
-  color: #fff;
-  margin: 0;
-  height: 0;
-  width: 0;
-  opacity: 0;
-  padding: 0;
+@keyframes slideInOut {
+  0%, 100% { opacity: 0; transform: translateY(0) }
+  10%,90% { opacity: 1; transform: translateY(-100%) }
+  100% { opacity: 0; transform: translateY(0) }
 }
 
-.accordion-tooltip--active::after {
-  padding: 10px 10px 20px 10px;
-  display: block;
-  animation: fade 2s linear;
-  -webkit-animation: fade 2s linear;
-  width: 275px;
-  height: auto;
-  top: 0;
-  left: -8px;
-  transform: translateY(-100%);
-  clip-path: polygon(
-    0% 0%, // Top left point
-    100% 0%, // Top right point
-    100% calc(100% - 10px), // Bottom right point
-    10px calc(100% - 10px), // Center right of the triangle
-    18px 100%, // Tip of the triangle
-    26px calc(100% - 10px), // Center left of the triangle
-    0% calc(100% - 10px) // Bottom left point
-  );
-  @media screen and (max-width: $tablet) {
-    display: none;
-  }
+@-webkit-keyframes slideInOut {
+  0%, 100% { opacity: 0; transform: translateY(0) }
+  10%,90% { opacity: 1; transform: translateY(-100%) }
+  100% { opacity: 0; transform: translateY(0) }
 }
+
 
 @keyframes fade {
   0%, 100% { opacity: 0; }
@@ -213,6 +231,7 @@ $controls-margin: 10px;
   100% { opacity: 0; }
 }
 
+// Global Controls
 .global-accordion-controls {
   display: flex;
   flex-direction: column;
