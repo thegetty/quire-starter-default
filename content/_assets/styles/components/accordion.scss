@@ -101,16 +101,20 @@ $controls-margin: 10px;
   padding: 0;
   background: none;
   border: none;
-  outline: inherit;
   @media screen and (min-width: $tablet) {
     color: transparent;
   }
+  &:not(:focus) {
+    outline: inherit;
+  }
 }
 
-.accordion-section__heading:hover .accordion-section__copy-link-button {
+.accordion-section__heading:hover .accordion-section__copy-link-button,
+.accordion-section__heading:focus .accordion-section__copy-link-button,
+.accordion-section__heading .accordion-section__copy-link-button:focus {
   @media screen and (min-width: $tablet) {
     color: $accent-color;
-    &:hover {
+    &:hover, &:focus {
       color: darken($accent-color, 15%);
     }
     &:active {
