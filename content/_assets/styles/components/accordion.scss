@@ -1,5 +1,8 @@
 $controls-width: 18px;
 $controls-margin: 10px;
+$copy-button-offset: 2px;
+$copy-button-width: 20px;
+$tooltip-padding: 10px;
 
 // Summary
 .accordion-section {
@@ -96,16 +99,17 @@ $controls-margin: 10px;
   align-items: center;
   justify-content: right;
   position: relative;
-  width: 20px;
-  margin: 0 2px 0 -22px;
+  width: $copy-button-width;
+  margin-right: $copy-button-offset;
+  margin-left: calc(-1 * $copy-button-width);
   padding: 0;
   background: none;
   border: none;
   @media screen and (min-width: $tablet) {
     color: transparent;
   }
-  &:not(:focus) {
-    outline: inherit;
+  &:focus:not(:focus-visible) {
+    outline: none;
   }
 }
 
@@ -168,42 +172,41 @@ $controls-margin: 10px;
   position: absolute;
   font-family: $quire-navigation-font;
   font-size: 1em;
-  &:after {
-    content: attr(data-text);
-    position: absolute;
-    display: none;
-    font-size: 16px;
-    background: black;
-    color: #fff;
-    margin: 0;
-    height: 0;
-    width: 0;
-    opacity: 0;
-    padding: 0;
-  }
-  &--active:after {
-    padding: 10px 10px 20px 10px;
+  display: none;
+  background: black;
+  color: #fff;
+  margin: 0;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  &--active {
+    padding: $tooltip-padding;
+    padding-bottom: calc(2*$tooltip-padding);
     display: block;
-    width: 300px;
     height: auto;
     top: 0;
-    left: -8px;
     transform: translateY(-100%);
     @media screen and (min-width: $tablet) {
+      width: 300px;
+      left: calc(calc(((-1 * $copy-button-width) - $copy-button-offset)/2) - calc(1.5 * $tooltip-padding));
       animation: fade 2s linear;
       -webkit-animation: fade 2s linear;
       clip-path: polygon(
         0% 0%, // Top left point
         100% 0%, // Top right point
-        100% calc(100% - 10px), // Bottom right point
-        10px calc(100% - 10px), // Center right of the triangle
+        100% calc(100% - $tooltip-padding), // Bottom right point
+        $tooltip-padding calc(100% - $tooltip-padding), // Center right of the triangle
         18px 100%, // Tip of the triangle
-        26px calc(100% - 10px), // Center left of the triangle
-        0% calc(100% - 10px) // Bottom left point
+        26px calc(100% - $tooltip-padding), // Center left of the triangle
+        0% calc(100% - $tooltip-padding) // Bottom left point
       );
     }
     @media screen and (max-width: $tablet) {
+      left: 0;
+      opacity: 1;
       position: fixed;
+      text-align: center;
       width: 100%;
       top: 100%;
       padding: 12px;
@@ -214,15 +217,15 @@ $controls-margin: 10px;
 }
 
 @keyframes slideInOut {
-  0%, 100% { opacity: 0; transform: translateY(0) }
-  10%,90% { opacity: 1; transform: translateY(-100%) }
-  100% { opacity: 0; transform: translateY(0) }
+  0%, 100% { transform: translateY(0) }
+  10%,90% { transform: translateY(-100%) }
+  100% { transform: translateY(0) }
 }
 
 @-webkit-keyframes slideInOut {
-  0%, 100% { opacity: 0; transform: translateY(0) }
-  10%,90% { opacity: 1; transform: translateY(-100%) }
-  100% { opacity: 0; transform: translateY(0) }
+  0%, 100% { transform: translateY(0) }
+  10%,90% { transform: translateY(-100%) }
+  100% { transform: translateY(0) }
 }
 
 
