@@ -260,7 +260,8 @@ $print-trim: $print-bleed * 2;
   }
 
   .half-title-page,
-  .title-page {
+  .title-page,
+  .copyright-page {
     page: no-footer;
   }
 
@@ -389,8 +390,10 @@ $print-trim: $print-bleed * 2;
       width: $menu-grid-item-width;
       height: 2.5in;
       margin-bottom: $menu-grid-gap;
-      background-color: $print-splash-color;
-      padding: 1em;
+      @if $theme == modern {
+        background-color: $print-splash-color;
+        padding: 1em;
+      }
       position: relative;
       * {
         margin: 0;
@@ -597,4 +600,33 @@ $print-trim: $print-bleed * 2;
     text-align: right;
   }
 
+  .copyright-page {
+    color: $print-text-color;
+    column-count: 2;
+    column-fill: auto;
+    column-gap: .1875in;
+    font-size: .75rem;
+    margin: 0;
+    max-width: 100%; 
+    .quire-page__header {
+      display: none;
+    } 
+    .quire-page__content .container .content {
+      ul {
+        margin-left: 0;
+        li {
+          margin: 0;
+          &::before {
+            content: none;
+          }
+        }
+      }
+      div {
+        margin-bottom: 1em;
+      }
+      .copyright__publisher-logo {
+        display: none;
+      }
+    }
+  }
 }
