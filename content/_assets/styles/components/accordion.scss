@@ -114,7 +114,7 @@ $tooltip-padding: 10px;
 }
 
 .accordion-section__heading:hover .accordion-section__copy-link-button,
-.accordion-section__heading:focus .accordion-section__copy-link-button,
+.accordion-section__heading:focus-visible .accordion-section__copy-link-button,
 .accordion-section__heading .accordion-section__copy-link-button:focus {
   @media screen and (min-width: $tablet) {
     color: $accent-color;
