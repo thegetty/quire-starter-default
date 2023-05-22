@@ -127,6 +127,18 @@ $tooltip-padding: 10px;
   }
 }
 
+.accordion-section__heading:focus .accordion-section__copy-link-button {
+  @media (pointer: fine) and (hover: none) {
+    color: $accent-color;
+    &:focus {
+      color: darken($accent-color, 15%);
+    }
+    &:active {
+      color: $print-text-color;
+    }
+  }
+}
+
 // Controls
 .accordion-section__controls:after {
   position: relative;
