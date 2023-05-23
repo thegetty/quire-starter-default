@@ -94,6 +94,7 @@ $tooltip-padding: 10px;
 // Copy heading link button
 .accordion-section__copy-link-button {
   cursor: pointer;
+  color: $print-text-color;
   font-family: $quire-headings-font;
   display: flex;
   align-items: center;
@@ -108,21 +109,22 @@ $tooltip-padding: 10px;
   @media screen and (min-width: $tablet) {
     color: transparent;
   }
+  &:active, &:hover, &:focus {
+    color: darken($accent-color, 15%);
+  }
   &:focus:not(:focus-visible) {
     outline: none;
   }
 }
 
-.accordion-section__heading:hover .accordion-section__copy-link-button,
-.accordion-section__heading:focus-visible .accordion-section__copy-link-button,
-.accordion-section__heading .accordion-section__copy-link-button:focus {
-  @media screen and (min-width: $tablet) {
-    color: $accent-color;
-    &:hover, &:focus {
-      color: darken($accent-color, 15%);
-    }
-    &:active {
-      color: $print-text-color;
+.accordion-section__heading:hover,
+.accordion-section__heading:focus-visible {
+  .accordion-section__copy-link-button {
+    @media screen and (min-width: $tablet) {
+      color: $accent-color;
+      &:hover {
+        color: darken($accent-color, 15%);
+      }
     }
   }
 }
@@ -132,9 +134,6 @@ $tooltip-padding: 10px;
     color: $accent-color;
     &:focus {
       color: darken($accent-color, 15%);
-    }
-    &:active {
-      color: $print-text-color;
     }
   }
 }
@@ -182,6 +181,7 @@ $tooltip-padding: 10px;
 // Tooltip
 .accordion-tooltip {
   position: absolute;
+  z-index: 1;
   font-family: $quire-navigation-font;
   font-size: 1em;
   display: none;
@@ -202,8 +202,8 @@ $tooltip-padding: 10px;
     @media screen and (min-width: $tablet) {
       width: 300px;
       left: calc(calc(((-1 * $copy-button-width) - $copy-button-offset)/2) - calc(1.5 * $tooltip-padding));
-      animation: fade 2s linear;
-      -webkit-animation: fade 2s linear;
+      animation: fade 2s linear forwards;
+      -webkit-animation: fade 2s linear forwards;
       clip-path: polygon(
         0% 0%, // Top left point
         100% 0%, // Top right point
@@ -222,8 +222,8 @@ $tooltip-padding: 10px;
       width: 100%;
       top: 100%;
       padding: 12px;
-      animation: slideInOut 2s linear;
-      -webkit-animation: slideInOut 2s linear;
+      animation: slideInOut 2s linear forwards;
+      -webkit-animation: slideInOut 2s linear forwards;
     }
   }
 }
