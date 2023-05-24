@@ -77,9 +77,9 @@ html {
 
   h1,
   &__header__title {
-    font-size: 3em;
+    font-size: $heading-1-font-size;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: $heading-1-line-height;
     margin: 1rem 0;
 
     @media print {
@@ -92,14 +92,14 @@ html {
 
   h2 {
     text-transform: uppercase;
-    font-size: 1.75rem;
-    line-height: 1.15;
+    font-size: $heading-2-font-size;
+    line-height: $heading-2-line-height;
   }
 
   h3 {
     font-style: italic;
-    font-size: 1.5rem;
-    line-height: 1.25;
+    font-size: $heading-3-font-size;
+    line-height: $heading-3-line-height;
   }
 
   &__header__contributor {
@@ -118,21 +118,21 @@ html {
   }
 
   h4 {
-    font-size: 1.375rem;
-    line-height: 1.3;
+    font-size: $heading-4-font-size;
+    line-height: $heading-4-line-height;
   }
 
   h5 {
-    font-size: 1.25rem;
+    font-size: $heading-5-font-size;
     font-weight: 400;
     font-style: italic;
-    line-height: 1.4;
+    line-height: $heading-5-line-height;
   }
 
   h6 {
-    font-size: 1.1875rem;
+    font-size: $heading-6-font-size;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: $heading-6-line-height;
   }
 
   &__content {
@@ -697,7 +697,7 @@ html {
   // Overrides to Bulma's .content styles where needed.
   padding-bottom: 0;
   .content {
-    a:not(.q-figure__modal-link):not(.q-figure__reset-link):not(.quire-contributor__url) {
+    a:not(.q-figure__modal-link):not(.q-figure__reset-link):not(.quire-contributor__url):not(.accordion-section__heading-link) {
       @media print {
         color: $print-text-color;
         border-bottom-width: 0;
