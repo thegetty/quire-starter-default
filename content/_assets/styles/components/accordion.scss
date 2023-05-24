@@ -73,13 +73,7 @@ $tooltip-padding: 10px;
   &::-webkit-details-marker {
     display: none;
   }
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  :is(p, h2, h3, h4, h5, h6) {
     width: calc(100% - calc($controls-width + $controls-margin));
   }
 }
