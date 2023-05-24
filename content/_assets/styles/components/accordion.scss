@@ -14,53 +14,55 @@ $tooltip-padding: 10px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.accordion-section__heading {
-  .accordion-section__copy-link-button,
-  &.accordion-section__controls:after {
-    font-size: $quire-base-font-size;
-    height: calc($quire-base-font-size * 2);
+.accordion-section {
+  &__heading {
+    .accordion-section__copy-link-button,
+    &:after {
+      font-size: $quire-base-font-size;
+      height: calc($quire-base-font-size * 2);
+    }
   }
-}
-.accordion-section__heading-level-1 {
-  .accordion-section__copy-link-button,
-  &.accordion-section__controls:after {
-    font-size: calc($heading-1-font-size * .8);
-    height: calc($heading-1-font-size * $heading-1-line-height);
+  &__heading-level-1 {
+    .accordion-section__copy-link-button,
+    &:after {
+      font-size: calc($heading-1-font-size * .8);
+      height: calc($heading-1-font-size * $heading-1-line-height);
+    }
   }
-}
-.accordion-section__heading-level-2 {
-  .accordion-section__copy-link-button,
-  &.accordion-section__controls:after {
-    font-size: calc($heading-2-font-size * .8);
-    height: calc($heading-2-font-size * $heading-2-line-height);
+  &__heading-level-2 {
+    .accordion-section__copy-link-button,
+    &:after {
+      font-size: calc($heading-2-font-size * .8);
+      height: calc($heading-2-font-size * $heading-2-line-height);
+    }
   }
-}
-.accordion-section__heading-level-3 {
-  .accordion-section__copy-link-button,
-  &.accordion-section__controls:after {
-    font-size: calc($heading-3-font-size * .8);
-    height: calc($heading-3-font-size * $heading-3-line-height);
+  &__heading-level-3 {
+    .accordion-section__copy-link-button,
+    &:after {
+      font-size: calc($heading-3-font-size * .8);
+      height: calc($heading-3-font-size * $heading-3-line-height);
+    }
   }
-}
-.accordion-section__heading-level-4 {
-  .accordion-section__copy-link-button,
-  &.accordion-section__controls:after {
-    font-size: calc($heading-4-font-size * .8);
-    height: calc($heading-4-font-size * $heading-4-line-height);
+  &__heading-level-4 {
+    .accordion-section__copy-link-button,
+    &:after {
+      font-size: calc($heading-4-font-size * .8);
+      height: calc($heading-4-font-size * $heading-4-line-height);
+    }
   }
-}
-.accordion-section__heading-level-5 {
-  .accordion-section__copy-link-button,
-  &.accordion-section__controls:after {
-    font-size: calc($heading-5-font-size * .8);
-    height: calc($heading-5-font-size * $heading-5-line-height);
+  &__heading-level-5 {
+    .accordion-section__copy-link-button,
+    &:after {
+      font-size: calc($heading-5-font-size * .8);
+      height: calc($heading-5-font-size * $heading-5-line-height);
+    }
   }
-}
-.accordion-section__heading-level-6 {
-  .accordion-section__copy-link-button,
-  &.accordion-section__controls:after {
-    font-size: $quire-base-font-size;
-    height: calc($heading-6-font-size * $heading-6-line-height);
+  &__heading-level-6 {
+    .accordion-section__copy-link-button,
+    &:after {
+      font-size: $quire-base-font-size;
+      height: calc($heading-6-font-size * $heading-6-line-height);
+    }
   }
 }
 
