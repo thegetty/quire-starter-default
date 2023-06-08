@@ -641,7 +641,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       }
 
       section.section,
-      section,
+      section:not(.accordion-section__body),
       header {
         @media screen and (min-width: $widescreen) {
           padding-left: 20px;

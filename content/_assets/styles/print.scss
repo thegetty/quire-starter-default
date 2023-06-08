@@ -182,6 +182,18 @@ $print-trim: $print-bleed * 2;
     page-break-after: avoid;
   }
 
+// General
+// -----------------------------------------------------------------------------
+
+// Workaround for figures splitting across pages in paged.js
+// TODO remove when https://github.com/thegetty/quire/issues/732 is fixed
+.q-figure:empty {
+	display:none;
+}
+.pagedjs_pages > .pagedjs_page > .pagedjs_sheet > .pagedjs_pagebox > .pagedjs_area > div .q-figure[data-split-from] {
+  padding-top: 1rem;
+}
+
 // Generated content for footers and page #s in TOC
 // -----------------------------------------------------------------------------
   .quire-page {

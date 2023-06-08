@@ -27,6 +27,8 @@
   }
 
   .q-lightbox-slides__element {
+    height: 100%;
+
     &--iiif,
     &--table {
       position: absolute;
