@@ -53,7 +53,7 @@ pageTitle:
   labelDivider: '. '
 
 ref:
-  sequenceTransitionSpeed: 30
+  sequenceTransition: 30
 
 searchEnabled: true
 
