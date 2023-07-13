@@ -13,6 +13,12 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.6.0]
+
+### Changed
+
+- Update styles and templates to support refactored `ref` shortcode with scroll interactions.
+
 ## [2.5.0]
 
 ### Fixed
