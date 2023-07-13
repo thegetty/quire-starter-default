@@ -8,6 +8,7 @@
 
 // scss-lint:disable EmptyRule
 $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AAAB6klEQVR4Ae3bsWpUQRTG8YkkanwCa7GzVotsI/gEgk9h4Vu4ySLYmMYgbJrc3lrwZbJwC0FMt4j7F6Y4oIZrsXtgxvx/1c0ufEX4cnbmLCmSJEmSJEmSJEmSJP3XCBPvbJU+8doWmDFwyZpLBmYlNJebz0KwzykwsuSYJSNwykEJreV2BaBMaLIQZ2xYcFgqDlmw4ayE/FwL0dDk4Qh4W37DAjgqIT+3HRbigjH+iikVdxgZStgyN0Su2sXIeTwTT+esdpcbIlfNAuZ/TxresG4zV8kYWSZNiKUTokMMSWeIwTNEn4fK2TW3gRNgVkJLuVksROA9G+bEvoATNlBCa7nZXEwdxEZxzpKRKFh+bsv8LmPFmhX1OwfIz81jIRJQ5eeqG9B+riRJkiRJkiRJkiRJkiRJkiRJUkvA/8RQoEpKlJWINFkJ62AlrEP/mNBibnv2yz/A3t7Uq3LcpoxP8COjC1T5vxoAD5VdoEqdDrd5QuW1swtUSaueh3zkiuBiqgtA2OlkeMcP/uDqugsJdbjHF65VdPMKwS0+WQc/MgKvrIOHysB9vgPwk8+85hmPbnQdvHZyDMAFD7L3EOpgMcVdvnHFS0/vlatrXvCVx0U9gt3fxvnA0/hB4nmRJEmSJEmSJEmSJGmHfgFLaDPoMu5xWwAAAABJRU5ErkJggg==);
+$image-divider-height: 16px;
 
 // .quire-entry
 // -----------------------------------------------------------------------------
@@ -88,7 +89,9 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       $quire-entry-image-icons-color
     );
     background-color: $black;
-    min-height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});
+    min-height: calc(
+      100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+    );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +112,9 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
     figure {
       flex: 1 1 100%;
       width: 100%;
-      height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});
+      height: calc(
+        100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+      );
       display: flex;
       align-items: center;
       justify-content: center;
@@ -188,12 +193,13 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
     &.fullscreen {
       img {
         margin: 0 auto;
-        max-height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});    
-        
+        max-height: calc(
+          100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+        );
+
         @media screen and (max-width: $desktop) {
           max-height: 60vh;
         }
-        
       }
       figure {
         height: 100vh;
@@ -220,7 +226,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
         }
 
         > span.quire-image-info__wrap {
-          color: $white;
+          color: $print-entry-caption-color;
           position: relative;
           display: block;
           padding: 6px 10px;
@@ -228,7 +234,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
           font-family: $quire-headings-font;
           font-size: 0.875rem;
           font-weight: bold;
-          
+
           @media print {
             background-color: transparent;
             display: block;
@@ -348,6 +354,9 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       // }
       @media screen and (max-width: $tablet) {
         padding: 1rem 1.25rem 0;
+      }
+      @media screen and (max-width: $desktop) {
+        margin-top: 0;
       }
     }
 
@@ -573,16 +582,33 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
   div.side-by-side {
     display: block;
 
-    @media screen and (min-width: $widescreen) {
+    @media screen and (min-width: $desktop) {
       display: flex;
     }
 
     div.quire-entry__image-wrap {
-      position: relative;
+      position: sticky;
       width: 100%;
       overflow: hidden;
+      z-index: 10;
+      @media screen and (max-width: $desktop) {
+        top: calc(#{$navbar-height} + #{$quire-progress-bar-height});
+        height: calc(
+          ((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * 0.45) +
+            $image-divider-height
+        );
+        &::after {
+          content: "";
+          position: absolute;
+          height: $image-divider-height;
+          width: 100%;
+          transform: translateY(calc(-100% + #{$image-divider-height}));
+          background-color: white;
+        }
+      }
 
-      @media screen and (min-width: $widescreen) {
+      @media screen and (min-width: $desktop) {
+        position: relative;
         width: 56%;
         flex: none;
       }
@@ -590,9 +616,11 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
       div.quire-entry__image {
         position: relative;
         width: 100%;
-        height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});
+        height: calc(
+          100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+        );
 
-        @media screen and (min-width: $widescreen) {
+        @media screen and (min-width: $desktop) {
           position: fixed;
           width: calc(56% - 8px);
           height: 100vh;
@@ -600,7 +628,7 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
             width: calc(56% - 197px);
           }
         }
-        
+
         @media screen and (max-width: $desktop) {
           height: 60vh;
           min-height: inherit;
@@ -608,12 +636,14 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
 
         .quire-entry__image__group-container {
           figure {
-            @media screen and (min-width: $widescreen) {
-              height: calc(100vh - #{$navbar-height} - #{$quire-progress-bar-height});
+            @media screen and (min-width: $desktop) {
+              height: calc(
+                100vh - #{$navbar-height} - #{$quire-progress-bar-height}
+              );
             }
 
             .quire-image-info {
-              @media screen and (min-width: $widescreen) {
+              @media screen and (min-width: $desktop) {
                 // bottom: 53px;
               }
             }
@@ -632,27 +662,58 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
     }
 
     div.quire-entry__content {
+      position: fixed;
+      overflow: scroll;
       width: 100%;
+      height: calc(
+        ((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * 0.55) -
+          $image-divider-height
+      );
 
-      @media screen and (min-width: $widescreen) {
+      @media screen and (min-width: $desktop) {
+        height: 100vh;
         width: 44%;
-        flex: none;
+        right: 0;
         background: $secondary-background-color;
       }
 
       section.section,
-      section:not(.accordion-section__body),
+      section,
       header {
-        @media screen and (min-width: $widescreen) {
+        @media screen and (min-width: $desktop) {
           padding-left: 20px;
           padding-right: 20px;
         }
 
         div.container {
-          @media screen and (min-width: $widescreen) {
+          @media screen and (min-width: $desktop) {
             width: 100%;
           }
         }
+      }
+    }
+
+    /* Hide lightbox UI on mobile unless in fullscreen */
+    .quire-entry__lightbox--fullscreen .q-lightbox-ui__counter {
+      display: block;
+    }
+    .q-lightbox-ui__counter {
+      display: none;
+      @media screen and (min-width: $desktop) {
+        display: block;
+      }
+    }
+    .q-figure-slides__slide-ui,
+    .q-lightbox-ui__navigation {
+      display: none;
+      @media screen and (min-width: $desktop) {
+        display: flex;
+      }
+    }
+    .quire-entry__lightbox--fullscreen {
+      .q-figure-slides__slide-ui,
+      .q-lightbox-ui__navigation {
+        display: flex;
       }
     }
   }
@@ -669,15 +730,21 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
 .quire-entry__lightbox {
   position: relative;
   width: 100%;
-  height: calc(100vh - 6rem - 3rem - 2px);
   background: black;
+  height: calc(100vh - #{$image-divider-height});
+  @media screen and (min-width: $desktop) {
+    height: calc(
+      100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+    );
+  }
   @media print {
     display: none;
   }
 }
 
 .side-by-side .quire-entry__lightbox {
-  @media screen and (min-width: 1184px) {
+  height: calc(100% - #{$image-divider-height});
+  @media screen and (min-width: $desktop) {
     position: fixed;
     /* top offsets 50px tall nav bar */
     top: 50px;
@@ -685,5 +752,16 @@ $image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAABYCAQAAACjBqE3AA
     width: calc(56% - 8px);
     /* calculated height accounts for 50px tall nav bar */
     height: calc(100vh - 50px);
+  }
+}
+
+.side-by-side .quire-entry__lightbox,
+.quire-entry__lightbox {
+  &--fullscreen {
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
   }
 }
