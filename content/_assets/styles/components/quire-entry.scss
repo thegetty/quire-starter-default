@@ -89,7 +89,9 @@ $image-divider-height: 16px;
       $quire-entry-image-icons-color
     );
     background-color: $black;
-    min-height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});
+    min-height: calc(
+      100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+    );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +112,9 @@ $image-divider-height: 16px;
     figure {
       flex: 1 1 100%;
       width: 100%;
-      height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});
+      height: calc(
+        100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+      );
       display: flex;
       align-items: center;
       justify-content: center;
@@ -189,12 +193,13 @@ $image-divider-height: 16px;
     &.fullscreen {
       img {
         margin: 0 auto;
-        max-height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});    
-        
+        max-height: calc(
+          100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+        );
+
         @media screen and (max-width: $desktop) {
           max-height: 60vh;
         }
-        
       }
       figure {
         height: 100vh;
@@ -229,7 +234,7 @@ $image-divider-height: 16px;
           font-family: $quire-headings-font;
           font-size: 0.875rem;
           font-weight: bold;
-          
+
           @media print {
             background-color: transparent;
             display: block;
@@ -588,9 +593,12 @@ $image-divider-height: 16px;
       z-index: 10;
       @media screen and (max-width: $desktop) {
         top: calc(#{$navbar-height} + #{$quire-progress-bar-height});
-        height: calc(((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * .45) + $image-divider-height);
+        height: calc(
+          ((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * 0.45) +
+            $image-divider-height
+        );
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           height: $image-divider-height;
           width: 100%;
@@ -608,7 +616,9 @@ $image-divider-height: 16px;
       div.quire-entry__image {
         position: relative;
         width: 100%;
-        height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});
+        height: calc(
+          100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+        );
 
         @media screen and (min-width: $desktop) {
           position: fixed;
@@ -618,7 +628,7 @@ $image-divider-height: 16px;
             width: calc(56% - 197px);
           }
         }
-        
+
         @media screen and (max-width: $desktop) {
           height: 60vh;
           min-height: inherit;
@@ -627,7 +637,9 @@ $image-divider-height: 16px;
         .quire-entry__image__group-container {
           figure {
             @media screen and (min-width: $desktop) {
-              height: calc(100vh - #{$navbar-height} - #{$quire-progress-bar-height});
+              height: calc(
+                100vh - #{$navbar-height} - #{$quire-progress-bar-height}
+              );
             }
 
             .quire-image-info {
@@ -653,7 +665,10 @@ $image-divider-height: 16px;
       position: fixed;
       overflow: scroll;
       width: 100%;
-      height: calc(((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * .55) - $image-divider-height);
+      height: calc(
+        ((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * 0.55) -
+          $image-divider-height
+      );
 
       @media screen and (min-width: $desktop) {
         height: 100vh;
@@ -688,14 +703,16 @@ $image-divider-height: 16px;
         display: block;
       }
     }
-    .q-figure-slides__slide-ui, .q-lightbox-ui__navigation {
+    .q-figure-slides__slide-ui,
+    .q-lightbox-ui__navigation {
       display: none;
       @media screen and (min-width: $desktop) {
         display: flex;
       }
     }
     .quire-entry__lightbox--fullscreen {
-      .q-figure-slides__slide-ui, .q-lightbox-ui__navigation {
+      .q-figure-slides__slide-ui,
+      .q-lightbox-ui__navigation {
         display: flex;
       }
     }
@@ -716,7 +733,9 @@ $image-divider-height: 16px;
   background: black;
   height: calc(100vh - #{$image-divider-height});
   @media screen and (min-width: $desktop) {
-    height: calc(100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height});
+    height: calc(
+      100vh - #{$quire-entry-header-height} - #{$navbar-height} - #{$quire-progress-bar-height}
+    );
   }
   @media print {
     display: none;
@@ -736,7 +755,8 @@ $image-divider-height: 16px;
   }
 }
 
-.side-by-side .quire-entry__lightbox, .quire-entry__lightbox {
+.side-by-side .quire-entry__lightbox,
+.quire-entry__lightbox {
   &--fullscreen {
     top: 0;
     position: fixed;
