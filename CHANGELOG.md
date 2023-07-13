@@ -13,6 +13,14 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.5.0]
+
+### Fixed
+
+- Fix missing fonts in PDF output:
+  - Rename `content/_assets/styles/fonts.scss` to `content/_assets/fonts/index.scss`
+  - Remove import statement for font stylesheet in `content/_assets/styles/application.scss`
+
 ## [2.4.0]
 
 ### Fixed
