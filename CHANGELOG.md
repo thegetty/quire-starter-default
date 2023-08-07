@@ -13,6 +13,12 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.7.0]
+
+### Added
+
+- Include `screen.scss` screen-only stylesheet
+
 ## [2.6.0]
 
 ### Changed
