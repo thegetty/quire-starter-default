@@ -1,7 +1,8 @@
 ---
 layout: page
 order: 5
-class: copyright-page
+classes:
+  - copyright-page
 outputs:
   - epub
   - pdf
