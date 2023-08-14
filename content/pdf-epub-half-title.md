@@ -1,6 +1,7 @@
 ---
 layout: base.11ty.js
-class: half-title-page
+classes:
+  - half-title-page
 order: 2
 outputs:
   - epub
