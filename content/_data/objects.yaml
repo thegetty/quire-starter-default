@@ -3,6 +3,10 @@ object_filters:
   - theme
   - material
 
+object_card:
+  - name
+  - thumbnail
+
 object_display_order:
 
 object_list:
