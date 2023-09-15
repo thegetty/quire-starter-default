@@ -1,0 +1,20 @@
+---
+title: "Relic"
+aliases: [relics]
+layout: thing
+order: 140
+tags: thing
+object:
+  - name: "Relic"
+    thumbnail: "figures/things/relic.jpg"
+    owner:
+      - first_name: Hyacinthe
+        last_name: Rigaud
+        years: 1659–1743
+    type: [Apparel, Commodity, Companion, Container, Devotional Thing, Gift, Heirloom, Ritual Thing, Symbolic Thing]
+    theme: [Family, Luxury, Religion]
+    material: [Metal | Gold/Gilding, Plant Matter | Wood]
+mentions: [will, watch, handkerchief, almanac]
+---
+
+**A relic—the physical remnants of a saint or holy figure**—lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

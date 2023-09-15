@@ -1,0 +1,20 @@
+---
+title: "Burin"
+aliases: [burins]
+layout: thing
+order: 107
+tags: thing
+object:
+  - name: "Burin"
+    thumbnail: "figures/things/burin.jpg"
+    owner:
+      - first_name: Renée-Elisabeth
+        last_name: Marlié
+        years: 1714–73
+    type: [Tool]
+    theme: [Family, Gender, Making, Studio]
+    material: [Metal | Steel, Plant Matter | Wood, Synthetic Materials | Paper]
+mentions: [quill, '*crayon*', marriage contract]
+---
+
+**“A burin is a steel instrument for engraving on metal.”** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

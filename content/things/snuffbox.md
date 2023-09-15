@@ -1,0 +1,20 @@
+---
+title: "Snuffbox"
+aliases: [snuffboxes]
+layout: thing
+order: 144
+tags: thing
+object:
+  - name: "Snuffbox"
+    thumbnail: "figures/things/snuffbox.jpg"
+    owner:
+      - first_name: Jean-Baptiste
+        last_name: Oudry
+        years: 1686–1755
+    type: [Apparel, Collectible, Commodity, Container, Intoxicant]
+    theme: [Global Commerce, Identity, Leisure, Luxury]
+    material: [Metal | Gold/Gilding, Plant Matter, Synthetic Materials | Lacquer, Synthetic Materials | Paint/Pigment]
+mentions: [handkerchief, watch, '*porte-crayons*', dog]
+---
+
+**The still-life painter Jean-Baptiste Oudry took snuff.** Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

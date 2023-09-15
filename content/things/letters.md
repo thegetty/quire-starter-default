@@ -1,0 +1,20 @@
+---
+title: "Letters"
+aliases: [letters]
+layout: thing
+order: 127
+tags: thing
+object:
+  - name: "Letters"
+    thumbnail: "figures/things/letters.jpg"
+    owner:
+      - first_name: Hyacinthe
+        last_name: Rigaud
+        years: 1659–1743
+    type: [Document, Ritual Thing, Symbolic Thing]
+    theme: [Administration, Identity]
+    material: [Animal | Wax, Synthetic Materials | Ink, Synthetic Materials | Paper]
+menitons: [order book, journal]
+---
+
+**Becoming a member of the Académie**—lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
