@@ -1,7 +1,7 @@
 ---
 title: "*Crayon*"
 aliases: ['*crayons*']
-layout: thing
+layout: page
 order: 111
 tags: thing
 object:

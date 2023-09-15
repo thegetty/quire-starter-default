@@ -1,7 +1,7 @@
 ---
 title: "Votive"
 aliases: [votives]
-layout: thing
+layout: page
 order: 150
 tags: thing
 object:

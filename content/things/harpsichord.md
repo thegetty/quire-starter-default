@@ -1,7 +1,7 @@
 ---
 title: "Harpsichord"
 aliases: [harpsichords]
-layout: thing
+layout: page
 order: 121
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Écorché"
 aliases: [écorchés]
-layout: thing
+layout: page
 order: 116
 tags: thing
 object:

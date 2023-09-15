@@ -1,7 +1,7 @@
 ---
 title: "Quill"
 aliases: [quills]
-layout: thing
+layout: page
 order: 138
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Sugar Spoon"
 aliases: [sugar spoons]
-layout: thing
+layout: page
 order: 145
 tags: thing
 object:

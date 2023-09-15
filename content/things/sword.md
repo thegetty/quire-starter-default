@@ -1,7 +1,7 @@
 ---
 title: "Sword"
 aliases: [swords]
-layout: thing
+layout: page
 order: 146
 tags: thing
 object:

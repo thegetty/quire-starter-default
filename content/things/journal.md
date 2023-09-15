@@ -1,7 +1,7 @@
 ---
 title: "Journal"
 aliases: [journals]
-layout: thing
+layout: page
 order: 124
 tags: thing
 object:

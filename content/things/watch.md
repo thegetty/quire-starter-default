@@ -1,7 +1,7 @@
 ---
 title: "Watch"
 aliases: [watches]
-layout: thing
+layout: page
 order: 151
 tags: thing
 object:

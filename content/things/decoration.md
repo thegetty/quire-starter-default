@@ -1,7 +1,7 @@
 ---
 title: "Decoration"
 aliases: [decorations]
-layout: thing
+layout: page
 order: 112
 tags: thing
 object:

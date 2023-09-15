@@ -1,7 +1,7 @@
 ---
 title: "Table"
 aliases: [tables]
-layout: thing
+layout: page
 order: 147
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Almanac"
 aliases: [almanacs]
-layout: thing
+layout: page
 order: 101
 tags: thing
 object:

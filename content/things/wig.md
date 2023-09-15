@@ -1,7 +1,7 @@
 ---
 title: "Wig"
 aliases: [wigs]
-layout: thing
+layout: page
 order: 153
 tags: thing
 object:

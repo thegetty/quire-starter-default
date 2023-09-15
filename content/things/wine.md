@@ -1,7 +1,7 @@
 ---
 title: "Wine"
 aliases: []
-layout: thing
+layout: page
 order: 155
 tags: thing
 object:

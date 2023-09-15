@@ -1,7 +1,7 @@
 ---
 title: "Relic"
 aliases: [relics]
-layout: thing
+layout: page
 order: 140
 tags: thing
 object:

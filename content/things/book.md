@@ -1,7 +1,7 @@
 ---
 title: "Book"
 aliases: [books]
-layout: thing
+layout: page
 order: 106
 tags: thing
 object:

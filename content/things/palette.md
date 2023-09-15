@@ -1,7 +1,7 @@
 ---
 title: "Palette"
 aliases: [palettes]
-layout: thing
+layout: page
 order: 134
 tags: thing
 object:

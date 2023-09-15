@@ -1,7 +1,7 @@
 ---
 title: "Model"
 aliases: [models]
-layout: thing
+layout: page
 order: 130
 tags: thing
 object:

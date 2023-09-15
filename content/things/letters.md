@@ -1,7 +1,7 @@
 ---
 title: "Letters"
 aliases: [letters]
-layout: thing
+layout: page
 order: 127
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Order Book"
 aliases: [order books]
-layout: thing
+layout: page
 order: 133
 tags: thing
 object:

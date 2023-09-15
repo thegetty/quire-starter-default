@@ -1,7 +1,7 @@
 ---
 title: "Sketchbook"
 aliases: [sketchbooks]
-layout: thing
+layout: page
 order: 143
 tags: thing
 object:

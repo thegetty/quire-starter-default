@@ -1,7 +1,7 @@
 ---
 title: "Carriage"
 aliases: [carriages]
-layout: thing
+layout: page
 order: 109
 tags: thing
 object:

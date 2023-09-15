@@ -1,7 +1,7 @@
 ---
 title: "Gaming Set"
 aliases: [gaming sets, game]
-layout: thing
+layout: page
 order: 118
 tags: thing
 object:

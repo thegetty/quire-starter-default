@@ -1,7 +1,7 @@
 ---
 title: "Shell"
 aliases: [shells]
-layout: thing
+layout: page
 order: 142
 tags: thing
 object:

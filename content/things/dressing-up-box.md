@@ -1,7 +1,7 @@
 ---
 title: "Dressing-Up Box"
 aliases: [dressing-up boxes]
-layout: thing
+layout: page
 order: 115
 tags: thing
 object:

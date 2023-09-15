@@ -1,7 +1,7 @@
 ---
 title: "*Robe de Chambre*"
 aliases: [robes de chambre, '*robe de chambre*', '*robes de chambre*']
-layout: thing
+layout: page
 order: 141
 tags: thing
 object:

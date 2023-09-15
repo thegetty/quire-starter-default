@@ -1,7 +1,7 @@
 ---
 title: "Picture"
 aliases: [pictures]
-layout: thing
+layout: page
 order: 136
 tags: thing
 object:

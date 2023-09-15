@@ -1,7 +1,7 @@
 ---
 title: "Mannequin"
 aliases: [mannequins]
-layout: thing
+layout: page
 order: 128
 tags: thing
 object:

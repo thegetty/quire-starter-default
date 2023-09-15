@@ -1,7 +1,7 @@
 ---
 title: "Funeral Book"
 aliases: [funeral books]
-layout: thing
+layout: page
 order: 117
 tags: thing
 object:

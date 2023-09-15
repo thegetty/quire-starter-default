@@ -1,7 +1,7 @@
 ---
 title: "Umbrella"
 aliases: [umbrellas]
-layout: thing
+layout: page
 order: 149
 tags: thing
 object:

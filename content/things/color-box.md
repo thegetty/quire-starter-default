@@ -1,7 +1,7 @@
 ---
 title: "Color Box"
 aliases: [color-boxes, color-box]
-layout: thing
+layout: page
 order: 110
 tags: thing
 object:

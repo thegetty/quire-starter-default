@@ -1,7 +1,7 @@
 ---
 title: "Document Box"
 aliases: [document boxes]
-layout: thing
+layout: page
 order: 113
 tags: thing
 object:

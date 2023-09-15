@@ -1,7 +1,7 @@
 ---
 title: "Teacup"
 aliases: [teacups]
-layout: thing
+layout: page
 order: 148
 tags: thing
 object:

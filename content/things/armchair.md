@@ -1,7 +1,7 @@
 ---
 title: "Armchair"
 aliases: [armchairs]
-layout: thing
+layout: page
 order: 102
 tags: thing
 object: 

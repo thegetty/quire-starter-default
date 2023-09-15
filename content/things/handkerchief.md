@@ -1,7 +1,7 @@
 ---
 title: "Handkerchief"
 aliases: [handkerchiefs]
-layout: thing
+layout: page
 order: 120
 tags: thing
 object:

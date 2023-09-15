@@ -1,7 +1,7 @@
 ---
 title: "Hot-Air Balloon"
 aliases: [hot-air balloons]
-layout: thing
+layout: page
 order: 122
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Will"
 aliases: [wills]
-layout: thing
+layout: page
 order: 154
 tags: thing
 object:

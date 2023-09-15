@@ -1,7 +1,7 @@
 ---
 title: "Camera Obscura"
 aliases: [camera obscuras]
-layout: thing
+layout: page
 order: 108
 tags: thing
 object:

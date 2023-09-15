@@ -1,7 +1,7 @@
 ---
 title: "Burin"
 aliases: [burins]
-layout: thing
+layout: page
 order: 107
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Marriage Contract"
 aliases: [marriage contracts]
-layout: thing
+layout: page
 order: 129
 tags: thing
 object:

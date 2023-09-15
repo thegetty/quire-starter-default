@@ -1,7 +1,7 @@
 ---
 title: "Water Fountain"
 aliases: [water fountains]
-layout: thing
+layout: page
 order: 152
 tags: thing
 object:

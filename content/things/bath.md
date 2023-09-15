@@ -1,7 +1,7 @@
 ---
 title: "Bath"
 aliases: [baths]
-layout: thing
+layout: page
 order: 104
 tags: thing
 object:

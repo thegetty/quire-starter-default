@@ -1,7 +1,7 @@
 ---
 title: "Red Lake"
 aliases: []
-layout: thing
+layout: page
 order: 139
 tags: thing
 object:

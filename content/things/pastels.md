@@ -1,7 +1,7 @@
 ---
 title: "Pastels"
 aliases: [pastel]
-layout: thing
+layout: page
 order: 135
 tags: thing
 object:

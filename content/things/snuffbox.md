@@ -1,7 +1,7 @@
 ---
 title: "Snuffbox"
 aliases: [snuffboxes]
-layout: thing
+layout: page
 order: 144
 tags: thing
 object:

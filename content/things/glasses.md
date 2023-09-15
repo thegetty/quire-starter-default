@@ -1,7 +1,7 @@
 ---
 title: "Glasses"
 aliases: []
-layout: thing
+layout: page
 order: 119
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Bed"
 aliases: [beds]
-layout: thing
+layout: page
 order: 105
 tags: thing
 object:

@@ -1,7 +1,7 @@
 ---
 title: "Nightingale"
 aliases: [nightingale]
-layout: thing
+layout: page
 order: 132
 tags: thing
 object:

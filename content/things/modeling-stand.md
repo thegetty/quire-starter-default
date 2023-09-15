@@ -1,7 +1,7 @@
 ---
 title: "Modeling Stand"
 aliases: [modeling stands]
-layout: thing
+layout: page
 order: 131
 tags: thing
 object:

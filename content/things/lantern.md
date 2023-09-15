@@ -1,7 +1,7 @@
 ---
 title: "Lantern"
 aliases: [lanterns]
-layout: thing
+layout: page
 order: 126
 tags: thing
 object:

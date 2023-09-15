@@ -1,7 +1,7 @@
 ---
 title: "Dog"
 aliases: [dogs]
-layout: thing
+layout: page
 order: 114
 tags: thing
 object:

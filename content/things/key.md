@@ -1,7 +1,7 @@
 ---
 title: "Key"
 aliases: [keys]
-layout: thing
+layout: page
 order: 125
 tags: thing
 object:

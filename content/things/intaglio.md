@@ -1,7 +1,7 @@
 ---
 title: "Intaglio"
 aliases: [intaglios]
-layout: thing
+layout: page
 order: 123
 tags: thing
 object:
