@@ -1,6 +1,7 @@
 ---
 title: "Things"
-layout: table-of-contents
-presentation: list
+layout: objects-catalog
 order: 100
+classes: 
+  - objects-catalogue
 ---

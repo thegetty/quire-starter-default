@@ -11,12 +11,12 @@ object_display_order:
 
 object_list:
 
-  - name: 
-    thumbnail: 
-    owner:
-      - first_name: 
-        last_name: 
-        years: 
-    type: 
-    theme: 
-    material: 
+  # - name: 
+  #   thumbnail: 
+  #   owner:
+  #     - first_name: 
+  #       last_name: 
+  #       years: 
+  #   type: 
+  #   theme: 
+  #   material: 
