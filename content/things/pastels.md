@@ -8,7 +8,7 @@ object:
   - letter: "P"
     name: "Pastels"
     thumbnail: "figures/things/pastels.jpg"
-    full_name: Marie-Suzanne Giroust
+    artist: Marie-Suzanne Giroust
     time_span: 1734–72
     owner:
       - first_name: Marie-Suzanne

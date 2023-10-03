@@ -8,7 +8,7 @@ object:
   - letter: "W"
     name: "Water Fountain"
     thumbnail: "figures/things/water-fountain.jpg"
-    full_name: Jean-Siméon Chardin
+    artist: Jean-Siméon Chardin
     time_span: 1699–1779
     owner:
       - first_name: Jean-Siméon

@@ -8,7 +8,7 @@ object:
   - letter: "W"
     name: "Wine"
     thumbnail: "figures/things/wine.jpg"
-    full_name: Alexis Grimou
+    artist: Alexis Grimou
     time_span: 1678–1733
     owner:
       - first_name: Alexis

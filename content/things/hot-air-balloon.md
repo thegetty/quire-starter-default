@@ -8,7 +8,7 @@ object:
   - letter: "H"
     name: "Hot-Air Balloon"
     thumbnail: "figures/things/hot-air-balloon.jpg"
-    full_name: Jean-François Janinet
+    artist: Jean-François Janinet
     time_span: 1752–1814
     owner:
       - first_name: Jean-François

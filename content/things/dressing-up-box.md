@@ -8,7 +8,7 @@ object:
   - letter: "D"
     name: "Dressing-Up Box"
     thumbnail: "figures/things/dressing-up-box.jpg"
-    full_name: Jean-Antoine Watteau
+    artist: Jean-Antoine Watteau
     time_span: 1684–1721
     owner:
       - first_name: Jean-Antoine

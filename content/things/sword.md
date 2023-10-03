@@ -8,7 +8,7 @@ object:
   - letter: "S"
     name: "Sword"
     thumbnail: "figures/things/sword.jpg"
-    full_name: François Lemoyne
+    artist: François Lemoyne
     time_span: 1688–1737
     owner:
       - first_name: François

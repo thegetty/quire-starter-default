@@ -8,7 +8,7 @@ object:
   - letter: "J"
     name: "Journal"
     thumbnail: "figures/things/journal.jpg"
-    full_name: Johann Georg Wille
+    artist: Johann Georg Wille
     time_span: 1715–1808
     owner:
       - first_name: Johann Georg

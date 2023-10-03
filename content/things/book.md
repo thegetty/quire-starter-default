@@ -8,7 +8,7 @@ object:
   - letter: "B"
     name: "Book"
     thumbnail: "figures/things/book.jpg"
-    full_name: Gilles-Marie Oppenord
+    artist: Gilles-Marie Oppenord
     time_span: 1672–1742
     owner:
       - first_name: Gilles-Marie

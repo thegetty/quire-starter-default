@@ -8,7 +8,7 @@ object:
   - letter: "D"
     name: "Document Box"
     thumbnail: "figures/things/document-box.jpg"
-    full_name: Secretaries of the Académie Royale
+    artist: Secretaries of the Académie Royale
     time_span: 1650–1793
     owner:
       - full_name: Secretaries of the Académie Royale

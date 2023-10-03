@@ -8,7 +8,7 @@ object:
   - letter: "C"
     name: "*Crayon*"
     thumbnail: "figures/things/crayon.jpg"
-    full_name: Jean-Baptiste Huët
+    artist: Jean-Baptiste Huët
     time_span: 1745–1811
     owner:
       - first_name: Jean-Baptiste

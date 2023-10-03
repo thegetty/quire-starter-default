@@ -8,7 +8,7 @@ object:
   - letter: "F"
     name: "Funeral Book"
     thumbnail: "figures/things/funeral-book.jpg"
-    full_name: Concierge of the Académie Royale
+    artist: Concierge of the Académie Royale
     time_span: 1684–1721
     owner:
       - full_name: Concierge of the Académie Royale

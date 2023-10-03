@@ -8,7 +8,7 @@ object:
   - letter: "T"
     name: "Table"
     thumbnail: "figures/things/table.jpg"
-    full_name: Jacques-Louis David
+    artist: Jacques-Louis David
     time_span: 1748–1825
     owner:
       - first_name: Jacques-Louis

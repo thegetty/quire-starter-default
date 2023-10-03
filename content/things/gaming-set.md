@@ -8,7 +8,7 @@ object:
   - letter: "G"
     name: "Gaming Set"
     thumbnail: "figures/things/gaming-set.jpg"
-    full_name: Jean-Étienne Liotard
+    artist: Jean-Étienne Liotard
     time_span: 1702–89
     owner:
       - first_name: Jean-Étienne

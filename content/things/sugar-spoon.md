@@ -8,7 +8,7 @@ object:
   - letter: "S"
     name: "Sugar Spoon"
     thumbnail: "figures/things/sugar-spoon.jpg"
-    full_name: François-Hubert Drouais
+    artist: François-Hubert Drouais
     time_span: 1727–75
     owner:
       - first_name: François-Hubert

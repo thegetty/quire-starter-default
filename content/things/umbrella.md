@@ -8,7 +8,7 @@ object:
   - letter: "U"
     name: "Umbrella"
     thumbnail: "figures/things/umbrella.jpg"
-    full_name: Jacques-Philippe Le Bas
+    artist: Jacques-Philippe Le Bas
     time_span: 1707–83
     owner:
       - first_name: Jacques-Philippe

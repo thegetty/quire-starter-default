@@ -8,7 +8,7 @@ object:
   - letter: "R"
     name: "*Robe de Chambre*"
     thumbnail: "figures/things/robe-de-chambre.jpg"
-    full_name: Louis-Michel Van Loo
+    artist: Louis-Michel Van Loo
     time_span: 1707–71
     owner:
       - first_name: Louis-Michel

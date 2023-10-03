@@ -8,7 +8,7 @@ object:
   - letter: "B"
     name: "Bath"
     thumbnail: "figures/things/bath.jpg"
-    full_name: Joseph-Siffred Duplessis
+    artist: Joseph-Siffred Duplessis
     time_span: 1725–1802
     owner:
       - first_name: Joseph-Siffred

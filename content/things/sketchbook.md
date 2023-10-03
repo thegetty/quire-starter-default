@@ -8,7 +8,7 @@ object:
   - letter: "S"
     name: "Sketchbook"
     thumbnail: "figures/things/sketchbook.jpg"
-    full_name: Jean-Michel Moreau the Younger
+    artist: Jean-Michel Moreau the Younger
     time_span: 1741–1814
     owner:
       - first_name: Jean-Michel

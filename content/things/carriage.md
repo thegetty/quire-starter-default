@@ -8,7 +8,7 @@ object:
   - letter: "C"
     name: "Carriage"
     thumbnail: "figures/things/carriage.jpg"
-    full_name: Jean-Baptiste Pigalle
+    artist: Jean-Baptiste Pigalle
     time_span: 1714–85
     owner:
       - first_name: Jean-Baptiste

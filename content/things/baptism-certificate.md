@@ -8,7 +8,7 @@ object:
   - letter: "B"
     name: "Baptism Certificate"
     thumbnail: "figures/things/baptism-certificate.jpg"
-    full_name: Hubert Robert
+    artist: Hubert Robert
     time_span: 1733–1808
     owner:
       - first_name: Hubert

@@ -8,7 +8,7 @@ object:
   - letter: "T"
     name: "Teacup"
     thumbnail: "figures/things/teacup.jpg"
-    full_name: Jean-Marc Nattier
+    artist: Jean-Marc Nattier
     time_span: 1685–1766
     owner:
       - first_name: Jean-Marc

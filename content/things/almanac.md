@@ -8,7 +8,7 @@ object:
   - letter: "A"
     name: "Almanac"
     thumbnail: "figures/things/almanac.jpg"
-    full_name: Claude-Joseph Vernet
+    artist: Claude-Joseph Vernet
     time_span: 1714–89
     owner:
       - first_name: Claude-Joseph

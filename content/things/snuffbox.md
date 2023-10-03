@@ -8,7 +8,7 @@ object:
   - letter: "S"
     name: "Snuffbox"
     thumbnail: "figures/things/snuffbox.jpg"
-    full_name: Jean-Baptiste Oudry
+    artist: Jean-Baptiste Oudry
     time_span: 1686–1755
     owner:
       - first_name: Jean-Baptiste

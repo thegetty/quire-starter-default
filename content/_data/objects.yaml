@@ -7,7 +7,7 @@ object_card:
   - letter
   - thumbnail
   - name
-  - full_name
+  - artist
   - time_span
 
 object_display_order:

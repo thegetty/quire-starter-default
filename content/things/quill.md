@@ -8,7 +8,7 @@ object:
   - letter: "Q"
     name: "Quill"
     thumbnail: "figures/things/quill.jpg"
-    full_name: Étienne-Maurice Falconet
+    artist: Étienne-Maurice Falconet
     time_span: 1716–91
     owner:
       - first_name: Étienne-Maurice

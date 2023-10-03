@@ -8,7 +8,7 @@ object:
   - letter: "K"
     name: "Key"
     thumbnail: "figures/things/key.jpg"
-    full_name: Pierre Peyron
+    artist: Pierre Peyron
     time_span: 1744–1814
     owner:
       - first_name: Pierre

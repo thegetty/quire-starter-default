@@ -8,7 +8,7 @@ object:
   - letter: "B"
     name: "Burin"
     thumbnail: "figures/things/burin.jpg"
-    full_name: Renée-Elisabeth Marlié
+    artist: Renée-Elisabeth Marlié
     time_span: 1714–73
     owner:
       - first_name: Renée-Elisabeth

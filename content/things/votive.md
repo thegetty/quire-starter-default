@@ -8,7 +8,7 @@ object:
   - letter: "V"
     name: "Votive"
     thumbnail: "figures/things/votive.jpg"
-    full_name: Pierre-Imbert Drevet
+    artist: Pierre-Imbert Drevet
     time_span: 1697–1739
     owner:
       - first_name: Pierre-Imbert

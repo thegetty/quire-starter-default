@@ -8,7 +8,7 @@ object:
   - letter: "S"
     name: "Shell"
     thumbnail: "figures/things/shell.jpg"
-    full_name: François Boucher
+    artist: François Boucher
     time_span: 1703–70
     owner:
       - first_name: François

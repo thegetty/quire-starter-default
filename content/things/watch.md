@@ -8,7 +8,7 @@ object:
   - letter: "W"
     name: "Watch"
     thumbnail: "figures/things/watch.jpg"
-    full_name: Charles-Antoine Coypel
+    artist: Charles-Antoine Coypel
     time_span: 1694–1752
     owner:
       - first_name: Charles-Antoine

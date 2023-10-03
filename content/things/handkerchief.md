@@ -8,7 +8,7 @@ object:
   - letter: "H"
     name: "Handkerchief"
     thumbnail: "figures/things/handkerchief.jpg"
-    full_name: Charles-Nicolas Cochin
+    artist: Charles-Nicolas Cochin
     time_span: 1715–90
     owner:
       - first_name: Charles-Nicolas

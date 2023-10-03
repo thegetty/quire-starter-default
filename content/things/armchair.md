@@ -8,7 +8,7 @@ object:
   - letter: "A"
     name: "Armchair"
     thumbnail: "figures/things/armchair.jpg"
-    full_name: Jean-Honoré Fragonard
+    artist: Jean-Honoré Fragonard
     time_span: 1732–1806
     owner:
       - first_name: Jean-Honoré

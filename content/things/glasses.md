@@ -8,7 +8,7 @@ object:
   - letter: "G"
     name: "Glasses"
     thumbnail: "figures/things/glasses.jpg"
-    full_name: François-André Vincent
+    artist: François-André Vincent
     time_span: 1746–1816
     owner:
       - first_name: François-André

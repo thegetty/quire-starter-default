@@ -8,7 +8,7 @@ object:
   - letter: "I"
     name: "Intaglio"
     thumbnail: "figures/things/intaglio.jpg"
-    full_name: Charles-Joseph Natoire
+    artist: Charles-Joseph Natoire
     time_span: 1700–77
     owner:
       - first_name: Charles-Joseph

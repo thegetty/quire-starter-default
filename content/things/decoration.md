@@ -8,7 +8,7 @@ object:
   - letter: "D"
     name: "Decoration"
     thumbnail: "figures/things/decoration.jpg"
-    full_name: Joseph-Marie Vien
+    artist: Joseph-Marie Vien
     time_span: 1716–1809
     owner:
       - first_name: Joseph-Marie

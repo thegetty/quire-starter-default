@@ -8,7 +8,7 @@ object:
   - letter: "M"
     name: "Model"
     thumbnail: "figures/things/model.jpg"
-    full_name: Edme Bouchardon
+    artist: Edme Bouchardon
     time_span: 1698–1762
     owner:
       - first_name: Edme

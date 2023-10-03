@@ -8,7 +8,7 @@ object:
   - letter: "M"
     name: "Marriage Contract"
     thumbnail: "figures/things/marriage-contract.jpg"
-    full_name: Jean-Baptiste Greuze
+    artist: Jean-Baptiste Greuze
     time_span: 1725–1805
     owner:
       - first_name: Jean-Baptiste

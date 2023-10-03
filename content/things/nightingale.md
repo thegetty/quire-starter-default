@@ -8,7 +8,7 @@ object:
   - letter: "N"
     name: "Nightingale"
     thumbnail: "figures/things/nightingale.jpg"
-    full_name: Marie-Anne Collot
+    artist: Marie-Anne Collot
     time_span: 1748–1821
     owner:
       - first_name: Marie-Anne

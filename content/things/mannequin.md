@@ -8,7 +8,7 @@ object:
   - letter: "M"
     name: "Mannequin"
     thumbnail: "figures/things/mannequin.jpg"
-    full_name: Jean-Baptiste Le Prince
+    artist: Jean-Baptiste Le Prince
     time_span: 1734–81
     owner:
       - first_name: Jean-Baptiste

@@ -8,7 +8,7 @@ object:
   - letter: "R"
     name: "Relic"
     thumbnail: "figures/things/relic.jpg"
-    full_name: Hyacinthe Rigaud
+    artist: Hyacinthe Rigaud
     time_span: 1659–1743
     owner:
       - first_name: Hyacinthe
