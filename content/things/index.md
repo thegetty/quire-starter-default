@@ -1,6 +1,6 @@
 ---
 title: "Things"
-layout: objects-catalog
+layout: objects-page
 order: 100
 classes: 
   - objects-catalogue
