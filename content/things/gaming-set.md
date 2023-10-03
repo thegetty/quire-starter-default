@@ -5,8 +5,11 @@ layout: page
 order: 118
 tags: thing
 object:
-  - name: "Gaming Set"
+  - letter: "G"
+    name: "Gaming Set"
     thumbnail: "figures/things/gaming-set.jpg"
+    full_name: Jean-Étienne Liotard
+    time_span: 1702–89
     owner:
       - first_name: Jean-Étienne
         last_name: Liotard

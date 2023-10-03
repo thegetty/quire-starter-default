@@ -5,8 +5,11 @@ layout: page
 order: 135
 tags: thing
 object:
-  - name: "Pastels"
+  - letter: "P"
+    name: "Pastels"
     thumbnail: "figures/things/pastels.jpg"
+    full_name: Marie-Suzanne Giroust
+    time_span: 1734–72
     owner:
       - first_name: Marie-Suzanne
         last_name: Giroust

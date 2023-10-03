@@ -5,8 +5,11 @@ layout: page
 order: 124
 tags: thing
 object:
-  - name: "Journal"
+  - letter: "J"
+    name: "Journal"
     thumbnail: "figures/things/journal.jpg"
+    full_name: Johann Georg Wille
+    time_span: 1715–1808
     owner:
       - first_name: Johann Georg
         last_name: Wille

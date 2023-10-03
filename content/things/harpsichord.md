@@ -5,8 +5,11 @@ layout: page
 order: 121
 tags: thing
 object:
-  - name: "Harpsichord"
+  - letter: "H"
+    name: "Harpsichord"
     thumbnail: "figures/things/harpsichord.jpg"
+    full_name: Jean-Marc Nattier
+    time_span: 1685–1766
     owner:
       - first_name: Jean-Marc
         last_name: Nattier

@@ -5,8 +5,11 @@ layout: page
 order: 115
 tags: thing
 object:
-  - name: "Dressing-Up Box"
+  - letter: "D"
+    name: "Dressing-Up Box"
     thumbnail: "figures/things/dressing-up-box.jpg"
+    full_name: Jean-Antoine Watteau
+    time_span: 1684–1721
     owner:
       - first_name: Jean-Antoine
         last_name: Watteau

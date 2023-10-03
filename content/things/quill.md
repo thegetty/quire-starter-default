@@ -5,8 +5,11 @@ layout: page
 order: 138
 tags: thing
 object:
-  - name: "Quill"
+  - letter: "Q"
+    name: "Quill"
     thumbnail: "figures/things/quill.jpg"
+    full_name: Étienne-Maurice Falconet
+    time_span: 1716–91
     owner:
       - first_name: Étienne-Maurice
         last_name: Falconet

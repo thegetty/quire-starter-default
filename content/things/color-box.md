@@ -5,8 +5,11 @@ layout: page
 order: 110
 tags: thing
 object:
-  - name: "Color Box"
+  - letter: "C"
+    name: "Color Box"
     thumbnail: "figures/things/color-box.jpg"
+    full_name: Jean-Honoré Fragonard
+    time_span: 1732–1806
     owner:
       - first_name: Jean-Honoré
         last_name: Fragonard

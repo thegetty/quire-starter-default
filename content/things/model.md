@@ -5,8 +5,11 @@ layout: page
 order: 130
 tags: thing
 object:
-  - name: "Model"
+  - letter: "M"
+    name: "Model"
     thumbnail: "figures/things/model.jpg"
+    full_name: Edme Bouchardon
+    time_span: 1698–1762
     owner:
       - first_name: Edme
         last_name: Bouchardon

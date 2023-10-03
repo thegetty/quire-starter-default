@@ -5,8 +5,11 @@ layout: page
 order: 139
 tags: thing
 object:
-  - name: "Red Lake"
+  - letter: "R"
+    name: "Red Lake"
     thumbnail: "figures/things/red-lake.jpg"
+    full_name: Joseph-Siffred Duplessis
+    time_span: 1725–1802
     owner:
       - first_name: Joseph-Siffred
         last_name: Duplessis

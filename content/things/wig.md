@@ -5,8 +5,11 @@ layout: page
 order: 153
 tags: thing
 object:
-  - name: "Wig"
+  - letter: "W"
+    name: "Wig"
     thumbnail: "figures/things/wig.jpg"
+    full_name: Claude-Joseph Vernet
+    time_span: 1714–89
     owner:
       - first_name: Claude-Joseph
         last_name: Vernet

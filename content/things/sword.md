@@ -5,8 +5,11 @@ layout: page
 order: 146
 tags: thing
 object:
-  - name: "Sword"
+  - letter: "S"
+    name: "Sword"
     thumbnail: "figures/things/sword.jpg"
+    full_name: François Lemoyne
+    time_span: 1688–1737
     owner:
       - first_name: François
         last_name: Lemoyne

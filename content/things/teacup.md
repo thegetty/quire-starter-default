@@ -5,8 +5,11 @@ layout: page
 order: 148
 tags: thing
 object:
-  - name: "Teacup"
+  - letter: "T"
+    name: "Teacup"
     thumbnail: "figures/things/teacup.jpg"
+    full_name: Jean-Marc Nattier
+    time_span: 1685–1766
     owner:
       - first_name: Jean-Marc
         last_name: Nattier

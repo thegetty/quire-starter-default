@@ -5,8 +5,11 @@ layout: page
 order: 111
 tags: thing
 object:
-  - name: "*Crayon*"
+  - letter: "C"
+    name: "*Crayon*"
     thumbnail: "figures/things/crayon.jpg"
+    full_name: Jean-Baptiste Huët
+    time_span: 1745–1811
     owner:
       - first_name: Jean-Baptiste
         last_name: Huët

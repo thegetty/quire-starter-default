@@ -5,8 +5,11 @@ layout: page
 order: 154
 tags: thing
 object:
-  - name: "Will"
+  - letter: "W"
+    name: "Will"
     thumbnail: "figures/things/will.jpg"
+    full_name: Jean-Baptiste Massé
+    time_span: 1687–1767
     owner:
       - first_name: Jean-Baptiste
         last_name: Massé

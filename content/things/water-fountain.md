@@ -5,8 +5,11 @@ layout: page
 order: 152
 tags: thing
 object:
-  - name: "Water Fountain"
+  - letter: "W"
+    name: "Water Fountain"
     thumbnail: "figures/things/water-fountain.jpg"
+    full_name: Jean-Siméon Chardin
+    time_span: 1699–1779
     owner:
       - first_name: Jean-Siméon
         last_name: Chardin

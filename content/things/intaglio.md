@@ -5,8 +5,11 @@ layout: page
 order: 123
 tags: thing
 object:
-  - name: "Intaglio"
+  - letter: "I"
+    name: "Intaglio"
     thumbnail: "figures/things/intaglio.jpg"
+    full_name: Charles-Joseph Natoire
+    time_span: 1700–77
     owner:
       - first_name: Charles-Joseph
         last_name: Natoire

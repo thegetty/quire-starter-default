@@ -5,8 +5,11 @@ layout: page
 order: 108
 tags: thing
 object:
-  - name: "Camera Obscura"
+  - letter: "C"
+    name: "Camera Obscura"
     thumbnail: "figures/things/camera-obscura.jpg"
+    full_name: Charles Parrocel
+    time_span: 1688–1752
     owner:
       - first_name: Charles
         last_name: Parrocel

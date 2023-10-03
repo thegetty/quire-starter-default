@@ -5,8 +5,11 @@ layout: page
 order: 106
 tags: thing
 object:
-  - name: "Book"
+  - letter: "B"
+    name: "Book"
     thumbnail: "figures/things/book.jpg"
+    full_name: Gilles-Marie Oppenord
+    time_span: 1672–1742
     owner:
       - first_name: Gilles-Marie
         last_name: Oppenord

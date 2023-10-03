@@ -5,8 +5,11 @@ layout: page
 order: 103
 tags: thing
 object:
-  - name: "Baptism Certificate"
+  - letter: "B"
+    name: "Baptism Certificate"
     thumbnail: "figures/things/baptism-certificate.jpg"
+    full_name: Hubert Robert
+    time_span: 1733–1808
     owner:
       - first_name: Hubert
         last_name: Robert

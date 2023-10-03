@@ -5,8 +5,11 @@ layout: page
 order: 142
 tags: thing
 object:
-  - name: "Shell"
+  - letter: "S"
+    name: "Shell"
     thumbnail: "figures/things/shell.jpg"
+    full_name: François Boucher
+    time_span: 1703–70
     owner:
       - first_name: François
         last_name: Boucher

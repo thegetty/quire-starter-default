@@ -5,8 +5,11 @@ layout: page
 order: 136
 tags: thing
 object:
-  - name: "Picture"
+  - letter: "P"
+    name: "Picture"
     thumbnail: "figures/things/picture.jpg"
+    full_name: Nicolas de Largillière
+    time_span: 1656–1746
     owner:
       - first_name: Nicolas de
         last_name: Largillière

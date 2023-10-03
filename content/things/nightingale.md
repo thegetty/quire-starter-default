@@ -5,8 +5,11 @@ layout: page
 order: 132
 tags: thing
 object:
-  - name: "Nightingale"
+  - letter: "N"
+    name: "Nightingale"
     thumbnail: "figures/things/nightingale.jpg"
+    full_name: Marie-Anne Collot
+    time_span: 1748–1821
     owner:
       - first_name: Marie-Anne
         last_name: Collot

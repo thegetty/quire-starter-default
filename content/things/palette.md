@@ -5,8 +5,11 @@ layout: page
 order: 134
 tags: thing
 object:
-  - name: "Palette"
+  - letter: "P"
+    name: "Palette"
     thumbnail: "figures/things/palette.jpg"
+    full_name: Elisabeth Vigée-Lebrun
+    time_span: 1755–1842
     owner:
       - first_name: Elisabeth
         last_name: Vigée-Lebrun

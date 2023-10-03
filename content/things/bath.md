@@ -5,8 +5,11 @@ layout: page
 order: 104
 tags: thing
 object:
-  - name: "Bath"
+  - letter: "B"
+    name: "Bath"
     thumbnail: "figures/things/bath.jpg"
+    full_name: Joseph-Siffred Duplessis
+    time_span: 1725–1802
     owner:
       - first_name: Joseph-Siffred
         last_name: Duplessis

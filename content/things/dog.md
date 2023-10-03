@@ -5,8 +5,11 @@ layout: page
 order: 114
 tags: thing
 object:
-  - name: "Dog"
+  - letter: "D"
+    name: "Dog"
     thumbnail: "figures/things/dog.jpg"
+    full_name: Joseph-Siffred Duplessis
+    time_span: 1725–1802
     owner:
       - first_name: Joseph-Siffred
         last_name: Duplessis

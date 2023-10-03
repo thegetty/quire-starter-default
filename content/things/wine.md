@@ -5,8 +5,11 @@ layout: page
 order: 155
 tags: thing
 object:
-  - name: "Wine"
+  - letter: "W"
+    name: "Wine"
     thumbnail: "figures/things/wine.jpg"
+    full_name: Alexis Grimou
+    time_span: 1678–1733
     owner:
       - first_name: Alexis
         last_name: Grimou

@@ -5,8 +5,11 @@ layout: page
 order: 133
 tags: thing
 object:
-  - name: "Order Book"
+  - letter: "O"
+    name: "Order Book"
     thumbnail: "figures/things/order-book.jpg"
+    full_name: Louis-Jean-François Lagrenée
+    time_span: 1724–1805
     owner:
       - first_name: Louis-Jean-François
         last_name: Lagrenée

@@ -5,8 +5,11 @@ layout: page
 order: 101
 tags: thing
 object:
-  - name: "Almanac"
+  - letter: "A"
+    name: "Almanac"
     thumbnail: "figures/things/almanac.jpg"
+    full_name: Claude-Joseph Vernet
+    time_span: 1714–89
     owner:
       - first_name: Claude-Joseph
         last_name: Vernet

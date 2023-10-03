@@ -5,8 +5,11 @@ layout: page
 order: 131
 tags: thing
 object:
-  - name: "Modeling Stand"
+  - letter: "M"
+    name: "Modeling Stand"
     thumbnail: "figures/things/modeling-stand.jpg"
+    full_name: Jean-Antoine Houdon
+    time_span: 1741–1828
     owner:
       - first_name: Jean-Antoine
         last_name: Houdon

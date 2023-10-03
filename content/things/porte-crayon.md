@@ -5,8 +5,11 @@ layout: page
 order: 137
 tags: thing
 object:
-  - name: "*Porte-Crayon*"
+  - letter: "P"
+    name: "*Porte-Crayon*"
     thumbnail: "figures/things/porte-crayon.jpg"
+    full_name: Jean-Baptiste Perronneau
+    time_span: ca. 1715–83
     owner:
       - first_name: Jean-Baptiste
         last_name: Perronneau

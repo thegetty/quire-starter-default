@@ -5,8 +5,11 @@ layout: page
 order: 147
 tags: thing
 object:
-  - name: "Table"
+  - letter: "T"
+    name: "Table"
     thumbnail: "figures/things/table.jpg"
+    full_name: Jacques-Louis David
+    time_span: 1748–1825
     owner:
       - first_name: Jacques-Louis
         last_name: David

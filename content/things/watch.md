@@ -5,8 +5,11 @@ layout: page
 order: 151
 tags: thing
 object:
-  - name: "Watch"
+  - letter: "W"
+    name: "Watch"
     thumbnail: "figures/things/watch.jpg"
+    full_name: Charles-Antoine Coypel
+    time_span: 1694–1752
     owner:
       - first_name: Charles-Antoine
         last_name: Coypel

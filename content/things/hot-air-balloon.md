@@ -5,8 +5,11 @@ layout: page
 order: 122
 tags: thing
 object:
-  - name: "Hot-Air Balloon"
+  - letter: "H"
+    name: "Hot-Air Balloon"
     thumbnail: "figures/things/hot-air-balloon.jpg"
+    full_name: Jean-François Janinet
+    time_span: 1752–1814
     owner:
       - first_name: Jean-François
         last_name: Janinet

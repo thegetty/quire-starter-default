@@ -5,8 +5,11 @@ layout: page
 order: 127
 tags: thing
 object:
-  - name: "Letters"
+  - letter: "L"
+    name: "Letters"
     thumbnail: "figures/things/letters.jpg"
+    full_name: Hyacinthe Rigaud
+    time_span: 1659–1743
     owner:
       - first_name: Hyacinthe
         last_name: Rigaud

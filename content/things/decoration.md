@@ -5,8 +5,11 @@ layout: page
 order: 112
 tags: thing
 object:
-  - name: "Decoration"
+  - letter: "D"
+    name: "Decoration"
     thumbnail: "figures/things/decoration.jpg"
+    full_name: Joseph-Marie Vien
+    time_span: 1716–1809
     owner:
       - first_name: Joseph-Marie
         last_name: Vien

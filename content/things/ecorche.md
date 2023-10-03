@@ -5,8 +5,11 @@ layout: page
 order: 116
 tags: thing
 object:
-  - name: "Écorché"
+  - letter: "E"
+    name: "Écorché"
     thumbnail: "figures/things/ecorche.jpg"
+    full_name: Jean-Antoine Houdon
+    time_span: 1741–1828
     owner:
       - first_name: Jean-Antoine
         last_name: Houdon

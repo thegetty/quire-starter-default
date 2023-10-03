@@ -5,8 +5,11 @@ layout: page
 order: 128
 tags: thing
 object:
-  - name: "Mannequin"
+  - letter: "M"
+    name: "Mannequin"
     thumbnail: "figures/things/mannequin.jpg"
+    full_name: Jean-Baptiste Le Prince
+    time_span: 1734–81
     owner:
       - first_name: Jean-Baptiste
         last_name: Le Prince

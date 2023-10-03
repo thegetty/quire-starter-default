@@ -4,8 +4,11 @@ object_filters:
   - material
 
 object_card:
-  - name
+  - letter
   - thumbnail
+  - name
+  - full_name
+  - time_span
 
 object_display_order:
 

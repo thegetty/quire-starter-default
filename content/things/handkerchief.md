@@ -5,8 +5,11 @@ layout: page
 order: 120
 tags: thing
 object:
-  - name: "Handkerchief"
+  - letter: "H"
+    name: "Handkerchief"
     thumbnail: "figures/things/handkerchief.jpg"
+    full_name: Charles-Nicolas Cochin
+    time_span: 1715–90
     owner:
       - first_name: Charles-Nicolas
         last_name: Cochin

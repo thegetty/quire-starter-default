@@ -5,8 +5,11 @@ layout: page
 order: 105
 tags: thing
 object:
-  - name: "Bed"
+  - letter: "B"
+    name: "Bed"
     thumbnail: "figures/things/bed.jpg"
+    full_name: Charles-Antoine Coypel
+    time_span: 1694–1752
     owner:
       - first_name: Charles-Antoine
         last_name: Coypel
