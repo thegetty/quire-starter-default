@@ -111,6 +111,10 @@ $print-trim: $print-bleed * 2;
     }
   }
 
+  @page objects {
+    background-color: $print-splash-color;
+  }
+
   @page splash {
     background-color: $print-splash-color;
   }
@@ -275,6 +279,10 @@ $print-trim: $print-bleed * 2;
   .title-page,
   .copyright-page {
     page: no-footer;
+  }
+
+  .objects-page {
+    page: objects;
   }
 
   .quire-splash {
