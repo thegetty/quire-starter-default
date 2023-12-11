@@ -13,6 +13,12 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.9.0]
+
+### Fixed
+
+- Removes deprecated `ref` shortcode from figure callouts, closes @thegetty/quire#886 
+
 ## [2.8.0]
 
 ### Changed
