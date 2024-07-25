@@ -597,6 +597,76 @@ html {
   }
 }
 
+// Download link defaults
+.quire-download__link {
+  color: if($theme == classic,$black,$accent-color);
+  fill: if($theme == classic,$black,$accent-color);
+  font-size: 0.875rem;
+
+  span {
+    margin-right: .25rem;
+  }
+}
+
+// Download link in the page header
+.quire-page__header {
+  .quire-download__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .25rem .5rem;
+    font-weight: 700;
+    width: fit-content;
+    margin: 1.5rem auto 0;
+
+    &:hover {
+      color: if($theme == classic,$accent-color,link-hover-color($secondary-background-color));
+      fill: if($theme == classic,$accent-color,link-hover-color($secondary-background-color));
+    }
+    .quire-download__link__icon {
+      height: 1rem;
+      width: 1rem;
+    }
+  } 
+}
+
+// Download link in the splash page header
+.quire-splash {
+  .quire-page__header {
+    .quire-download__link {
+      background-color: $content-background-color;
+      border-radius: 2px;
+
+      &:hover {
+        color: $content-background-color;
+        fill: $content-background-color;
+        background-color: $accent-color;
+      }
+    }
+  }
+}
+
+// Download link in the page footer
+.quire-page__content {
+  .quire-download-footer-link {
+    border-top: 1px solid currentColor;
+    font-family: $quire-footnotes-font;
+    margin-top: 2rem;
+    padding-top: 1rem;
+
+    .quire-download__link {
+      &:hover {
+        color: if($theme == classic,$accent-color,link-hover-color($content-background-color));
+        fill: if($theme == classic,$accent-color,link-hover-color($content-background-color));
+      }
+      .quire-download__link__icon {
+        height: 0.875rem;
+        width: 0.875rem;
+      }
+    }
+  }
+}
+
 .quire-splash {
   .quire-page__header {
     &.hero-image {
