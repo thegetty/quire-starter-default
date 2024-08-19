@@ -17,10 +17,11 @@
   .q-lightbox-slides__slide {
     transform: translateY(100%);
     opacity: 0;
-    display: none:
+    display: none;
     transition: transform 0s 0.4s, opacity 0.4s linear;
 
-    &[data-lightbox-near-current] {
+    &[data-lightbox-preload] {
+      // Laid-out but transparent so component load events fire 
       display: block;
     }
 
