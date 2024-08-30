@@ -17,11 +17,18 @@
   .q-lightbox-slides__slide {
     transform: translateY(100%);
     opacity: 0;
+    display: none;
     transition: transform 0s 0.4s, opacity 0.4s linear;
+
+    &[data-lightbox-preload] {
+      // Laid-out but transparent so component load events fire 
+      display: block;
+    }
 
     &[data-lightbox-current] {
       transform: translateY(0);
       opacity: 1;
+      display: block;
       transition: transform 0s, opacity 0.4s linear;
     }
   }
