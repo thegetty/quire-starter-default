@@ -4,6 +4,30 @@
 //
 // Styles for `lightboxSlides` shortcode used in `lightbox` shortcode
 
+::slotted( *[slot="slides"] ) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    display: none;
+    transition: transform 0s 0.4s, opacity 0.4s linear;
+
+    &[data-lightbox-preload] {
+      // Laid-out but transparent so component load events fire 
+      display: block;
+    }
+
+    &[data-lightbox-current] {
+      transform: translateY(0);
+      opacity: 1;
+      display: block;
+      transition: transform 0s, opacity 0.4s linear;
+    }
+}
+
 @media screen {
   .q-lightbox-slides {
     position: absolute;
@@ -13,7 +37,7 @@
     left: 0;
   }
 
-  q-lightbox-slide {
+  .q-lightbox-slides--slide {
     position: absolute;
     width: 100%;
     height: 100%;
