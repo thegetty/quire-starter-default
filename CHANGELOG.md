@@ -13,6 +13,17 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.9.1]
+
+### Fixed
+
+- Adds `display: none` to lightbox slide styles that use `opacity: none`
+
+### Changed
+
+- Adds `lightbox-slide-preload` selectors to lightbox styles
+- Adds bulma visibility helpers (`is-hidden`, etc) to CSS bundle
+
 ## [2.9.0]
 
 ### Fixed
