@@ -1,3 +1,4 @@
+@use "sass:color";
 // =============================================================================
 // Utilities.scss
 // -----------------------------------------------------------------------------
@@ -48,7 +49,7 @@
 
 // Adjust text color based background
 @function background-color-text($color) {
-  @if (lightness($color) > 50) {
+  @if (color.lightness($color) > 50) {
     @return $off-black; // lighter background, return dark color
   } @else {
     @return $white; // darker background, return light color
@@ -57,7 +58,7 @@
 
 // Adjust text color based background
 @function background-color-text-classic($color) {
-  @if (lightness($color) > 50) {
+  @if (color.lightness($color) > 50) {
     @if $theme == classic {
       @return $black;
     } @else {
@@ -71,7 +72,7 @@
 // Adjust button color based background
 @function button-color($color) {
   @if $theme == classic {
-    @if (lightness($color) > 50) {
+    @if (color.lightness($color) > 50) {
       @return $off-black;
     } @else {
       @return $white;
@@ -86,20 +87,20 @@
   @if $theme == classic {
     @return $accent-color;
   } @else {
-    @if (lightness($color) > 50) {
-      @return darken($accent-color, 15%);
+    @if (color.lightness($color) > 50) {
+      @return color.adjust($accent-color, $lightness: -15%);
     } @else {
-      @return lighten($accent-color, 15%);
+      @return color.adjust($accent-color, $lightness: 15%);
     }
   }
 }
 
 // Adjust background color
 @function background-color($color) {
-  @if (lightness($color) > 50) {
-    @return darken($color, 10%); // lighter background, return dark color
+  @if (color.lightness($color) > 50) {
+    @return color.adjust($color, $lightness: -10%); // lighter background, return dark color
   } @else {
-    @return lighten($color, 10%); // darker background, return light color
+    @return color.adjust($color, $lightness: 10%); // darker background, return light color
   }
 }
 

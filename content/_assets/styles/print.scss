@@ -1,6 +1,6 @@
 @use "sass:math";
-@import "colors";
-@import "variables";
+@use "colors";
+@use "variables";
 
 // =============================================================================
 // Print.scss
@@ -12,16 +12,16 @@
 
 // Variables (others in the variables.scss file)
 // -----------------------------------------------------------------------------
-$print-base-text-column-width: ($print-width - $print-inner-margin - $print-outer-margin) * .7;
+$print-base-text-column-width: (variables.$print-width - variables.$print-inner-margin - variables.$print-outer-margin) * .7;
 
-@if $print-width <= 7 {
-  $print-base-text-column-width: $print-width - $print-inner-margin - $print-outer-margin;
+@if variables.$print-width <= 7 {
+  $print-base-text-column-width: variables.$print-width - variables.$print-inner-margin - variables.$print-outer-margin;
 }
 
-$print-footer-font: $quire-headings-font;
+$print-footer-font: variables.$quire-headings-font;
 $print-footer-font-size: 8pt;
 
-$print-trim: $print-bleed * 2;
+$print-trim: variables.$print-bleed * 2;
 
 
 @media print {
@@ -29,21 +29,21 @@ $print-trim: $print-bleed * 2;
 // Paged Media CSS Setup for PrinceXML
 // -----------------------------------------------------------------------------
   @page {
-    size: $print-width $print-height;
-    prince-bleed: $print-bleed;
-    bleed: $print-bleed;
+    size: variables.$print-width variables.$print-height;
+    prince-bleed: variables.$print-bleed;
+    bleed: variables.$print-bleed;
     prince-trim: $print-trim;
     marks: crop;
-    margin-top: $print-top-margin;
-    margin-bottom: $print-bottom-margin;
+    margin-top: variables.$print-top-margin;
+    margin-bottom: variables.$print-bottom-margin;
     font-family: $print-footer-font;
     font-size: $print-footer-font-size;
-    color: $print-text-color;
+    color: variables.$print-text-color;
   }
 
   @page:left {
-    margin-left: $print-outer-margin;
-    margin-right: $print-inner-margin;
+    margin-left: variables.$print-outer-margin;
+    margin-right: variables.$print-inner-margin;
 
     @bottom-right {
       content: string(sectiontitle);
@@ -64,8 +64,8 @@ $print-trim: $print-bleed * 2;
   }
 
   @page:right {
-    margin-left: $print-inner-margin;
-    margin-right: $print-outer-margin;
+    margin-left: variables.$print-inner-margin;
+    margin-right: variables.$print-outer-margin;
 
     @bottom-left {
       content: string(pagetitle);
@@ -97,14 +97,14 @@ $print-trim: $print-bleed * 2;
   }
 
   @page frontmatter-splash:left {
-    background-color: $print-splash-color;
+    background-color: variables.$print-splash-color;
     @bottom-left {
       content: counter(page, lower-roman);
     }
   }
 
   @page frontmatter-splash:right {
-    background-color: $print-splash-color;
+    background-color: variables.$print-splash-color;
     @bottom-right {
       text-align: right;
       content: counter(page, lower-roman);
@@ -112,19 +112,19 @@ $print-trim: $print-bleed * 2;
   }
 
   @page objects {
-    background-color: $print-splash-color;
+    background-color: variables.$print-splash-color;
   }
 
   @page splash {
-    background-color: $print-splash-color;
+    background-color: variables.$print-splash-color;
   }
 
   @page splash-image {
     margin-top: 0;
-    margin-bottom: -$print-bleed;
+    margin-bottom: -(variables.$print-bleed);
     margin-left: 0;
     margin-right: 0;
-    background-color: $print-splash-color;
+    background-color: variables.$print-splash-color;
     @bottom-right {
       content: none;
     }
@@ -135,7 +135,7 @@ $print-trim: $print-bleed * 2;
   }
 
   @page entry-image {
-    background-color: $print-entry-image-color;
+    background-color: variables.$print-entry-image-color;
     @bottom-right {
       content: none;
     }
@@ -147,7 +147,7 @@ $print-trim: $print-bleed * 2;
 
   @page cover {
     margin-top: 0;
-    margin-bottom: -$print-bleed;
+    margin-bottom: -(variables.$print-bleed);
     margin-left: 0;
     margin-right: 0;
     @bottom-right {
@@ -170,7 +170,7 @@ $print-trim: $print-bleed * 2;
   }
 
   @page pdf-cover-page {
-    background-color: $print-splash-color;
+    background-color: variables.$print-splash-color;
     @bottom-right {
       content: none;
     }
@@ -304,7 +304,7 @@ $print-trim: $print-bleed * 2;
 
       }
       &--full-height {
-        $print-splash-height: $print-height - $print-top-margin - $print-bottom-margin;
+        $print-splash-height: variables.$print-height - variables.$print-top-margin - variables.$print-bottom-margin;
         height: $print-splash-height;
         page: splash-image;
       }
@@ -350,7 +350,7 @@ $print-trim: $print-bleed * 2;
       }
     }
 
-    @if $print-width > 7 {
+    @if variables.$print-width > 7 {
       .quire-essay &,
       .quire-entry & {
         column-count: 2;
@@ -399,7 +399,7 @@ $print-trim: $print-bleed * 2;
 
   .quire-page__header.hero-image .hero-body {
     margin: 2.5in .5in 0;
-    @if $print-width <= 7 {
+    @if variables.$print-width <= 7 {
       width: $print-base-text-column-width;
       margin: 2.5in auto 0;
     }
@@ -410,10 +410,10 @@ $print-trim: $print-bleed * 2;
   $menu-grid-gap: .1875in;
   $menu-grid-item-margin: math.div($menu-grid-gap, 2);
 
-  $menu-grid-item-width: math.div($print-width - $print-outer-margin - $print-inner-margin - 3 * $menu-grid-gap, 3);
+  $menu-grid-item-width: math.div(variables.$print-width - variables.$print-outer-margin - variables.$print-inner-margin - 3 * $menu-grid-gap, 3);
 
-  @if $print-width <= 7 {
-    $menu-grid-item-width: math.div($print-width - $print-outer-margin - $print-inner-margin - (2 * $menu-grid-gap), 2);
+  @if variables.$print-width <= 7 {
+    $menu-grid-item-width: math.div(variables.$print-width - variables.$print-outer-margin - variables.$print-inner-margin - (2 * $menu-grid-gap), 2);
   }
 
   .quire-contents-list.grid .menu-list ol {
@@ -421,8 +421,8 @@ $print-trim: $print-bleed * 2;
       width: $menu-grid-item-width;
       height: 2.5in;
       margin-bottom: $menu-grid-gap;
-      @if $theme == modern {
-        background-color: $print-splash-color;
+      @if variables.$theme == modern {
+        background-color: variables.$print-splash-color;
         padding: 1em;
       }
       position: relative;
@@ -439,7 +439,7 @@ $print-trim: $print-bleed * 2;
         .card-content {
           padding: $menu-grid-gap 0;
           font-size: 1.25rem;
-          font-family: $quire-primary-font;
+          font-family: variables.$quire-primary-font;
         }
         img {
           max-height: 1.25in;
@@ -449,15 +449,15 @@ $print-trim: $print-bleed * 2;
     }
     .section-item {
       width: 100%;
-      border-bottom: 1px solid $print-text-color;
+      border-bottom: 1px solid variables.$print-text-color;
       margin-bottom: .25in;
     }
   }
 
 // Entry image pages
 // -----------------------------------------------------------------------------
-  $print-entry-image-height: $print-height - $print-top-margin - $print-bottom-margin;
-  $print-entry-image-width: $print-width - $print-inner-margin - $print-outer-margin;
+  $print-entry-image-height: variables.$print-height - variables.$print-top-margin - variables.$print-bottom-margin;
+  $print-entry-image-width: variables.$print-width - variables.$print-inner-margin - variables.$print-outer-margin;
 
   .quire-entry__image-wrap .q-figure {
     align-items: center;
@@ -468,7 +468,7 @@ $print-trim: $print-bleed * 2;
     justify-content: center;
     margin: 0;
     padding: 0;
-    @if $print-entry-image-display == first {
+    @if variables.$print-entry-image-display == first {
       display: none;
       &:first-child {
         display: flex;
@@ -491,17 +491,17 @@ $print-trim: $print-bleed * 2;
       }
     }
     .q-figure__caption {
-      color: $print-entry-caption-color;
+      color: variables.$print-entry-caption-color;
       font-size: .75rem;
       margin-top: .5rem;
       max-width: $print-base-text-column-width;
       &-embed-link a {
-        color: $print-entry-caption-color;
+        color: variables.$print-entry-caption-color;
         display: block;
         margin-bottom: .5rem;
       }
       .q-figure__modal-link {
-        color: $print-entry-caption-color;
+        color: variables.$print-entry-caption-color;
       }
     }
   }
@@ -594,7 +594,7 @@ $print-trim: $print-bleed * 2;
     justify-content: space-around;
     align-items: flex-end;
     text-align: right;
-    font-family: $quire-headings-font;
+    font-family: variables.$quire-headings-font;
 
     * {
       max-width: 5.5in;
@@ -603,7 +603,7 @@ $print-trim: $print-bleed * 2;
     .title {
       font-size: 4em;
       font-weight: 700;
-      color: $accent-color;
+      color: variables.$accent-color;
       line-height: 1.1;
       margin-bottom: .3em;
     }
@@ -625,14 +625,14 @@ $print-trim: $print-bleed * 2;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    font-family: $quire-headings-font;
+    font-family: variables.$quire-headings-font;
     font-size: 1.5em;
-    color: $accent-color;
+    color: variables.$accent-color;
     text-align: right;
   }
 
   .copyright-page {
-    color: $print-text-color;
+    color: variables.$print-text-color;
     column-count: 2;
     column-fill: auto;
     column-gap: .1875in;
