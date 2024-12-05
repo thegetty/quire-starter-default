@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "colors";
+
 // =============================================================================
 // Variables.scss
 // -----------------------------------------------------------------------------
@@ -34,26 +37,26 @@ $quire-page-paragraph-style: line-space; // or use indent
 
 // Cover typography
 // -----------------------------------------------------------------------------
-$quire-cover-text-color: $white;
+$quire-cover-text-color: colors.$white;
 $quire-cover-text-scale: 1; // use decimal numbers such as .8 or 1.3
 
 // Menu
 // -----------------------------------------------------------------------------
 $quire-menu-width: 352px;
 
-$quire-menu-color: $off-black;
-$quire-menu-text-color: $white;
+$quire-menu-color: colors.$off-black;
+$quire-menu-text-color: colors.$white;
 
 // Image viewer (pop-up figure viewer & entry page viewer)
 // -----------------------------------------------------------------------------
 $quire-entry-header-height: 6rem;
 
-$quire-entry-image-color: $black;
-$quire-entry-image-icons-color: $white;
+$quire-entry-image-color: colors.$black;
+$quire-entry-image-icons-color: colors.$white;
 
 // Active link and table-row color
 // -----------------------------------------------------------------------------
-$quire-hover-color: $light-yellow;
+$quire-hover-color: colors.$light-yellow;
 
 // Print/PDF stylesheet
 // -----------------------------------------------------------------------------
@@ -67,12 +70,12 @@ $print-outer-margin: 0.75in;
 $print-inner-margin: 1in;
 
 $print-base-font-size: 8.5pt;
-$print-text-color: $black;
+$print-text-color: colors.$black;
 
-$print-splash-color: $off-white;
+$print-splash-color: colors.$off-white;
 
-$print-entry-image-color: $black; // or can use $rich-black with PrinceXML
-$print-entry-caption-color: $white;
+$print-entry-image-color: colors.$black; // or can use $rich-black with PrinceXML
+$print-entry-caption-color: colors.$white;
 $print-entry-image-display: all; // first | all
 
 // Themes
@@ -89,8 +92,8 @@ $quire-navigation-font: null; // navbar and next/prev buttons
   $quire-headings-font: $times-serif !default;
   $quire-footnotes-font: $noto-sans !default;
   $quire-navigation-font: $noto-sans !default;
-  $accent-color: $blue !default;
-  $content-background-color: $white !default;
+  $accent-color: colors.$blue !default;
+  $content-background-color: colors.$white !default;
   $secondary-background-color: $content-background-color;
 } @else {
   // Modern Theme (default)
@@ -98,9 +101,9 @@ $quire-navigation-font: null; // navbar and next/prev buttons
   $quire-headings-font: $ibm-sans !default;
   $quire-footnotes-font: $noto-serif !default;
   $quire-navigation-font: $noto-sans !default;
-  $accent-color: $red !default;
-  $content-background-color: $white !default;
-  $secondary-background-color: $off-white !default;
+  $accent-color: colors.$red !default;
+  $content-background-color: colors.$white !default;
+  $secondary-background-color: colors.$off-white !default;
 }
 
 // Navbar
@@ -116,16 +119,16 @@ $quire-navbar-text-color: null;
 @if $navbar == accent {
   // Accent Navbar
   $quire-navbar-color: $accent-color !default;
-  $quire-navbar-hover-color: darken($quire-navbar-color, 5%) !default;
-  $quire-navbar-text-color: $white !default;
+  $quire-navbar-hover-color: color.adjust($quire-navbar-color, $lightness: -5%) !default;
+  $quire-navbar-text-color: colors.$white !default;
 } @else {
   // Normal Navbar (default)
-  $quire-navbar-color: $white !default;
-  $quire-navbar-hover-color: darken($quire-navbar-color, 5%) !default;
+  $quire-navbar-color: colors.$white !default;
+  $quire-navbar-hover-color: color.adjust($quire-navbar-color, $lightness: -5%) !default;
   @if $theme == classic {
-    $quire-navbar-text-color: lighten($off-black, 20%) !default;
+    $quire-navbar-text-color: color.adjust(colors.$off-black, $lightness: 20%) !default;
   } @else {
-    $quire-navbar-text-color: $off-black !default;
+    $quire-navbar-text-color: colors.$off-black !default;
   }
 }
 
@@ -137,9 +140,9 @@ $quire-cover-color-2: null;
 
 @if $theme == classic {
   $quire-cover-color-1: $accent-color !default;
-  $quire-cover-color-2: $red !default;
+  $quire-cover-color-2: colors.$red !default;
 } @else {
-  $quire-cover-color-1: $blue !default;
+  $quire-cover-color-1: colors.$blue !default;
   $quire-cover-color-2: $accent-color !default;
 }
 
