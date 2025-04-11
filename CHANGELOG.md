@@ -15,6 +15,10 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 
 ## [Unreleased]
 
+### Added
+
+- Include demo of `objects-page` for catalogue, in place of `table-of-contents` grid
+
 ### Fixed
 
 - Fixed height being applied to page in PDF output on side-by-side entry pages
