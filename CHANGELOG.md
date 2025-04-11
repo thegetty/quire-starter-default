@@ -13,6 +13,13 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [Unreleased]
+
+### Fixed
+
+- Fixed height being applied to page in PDF output on side-by-side entry pages
+- Alignment of navigation buttons in Safari
+
 ## [2.9.0]
 
 ### Fixed
