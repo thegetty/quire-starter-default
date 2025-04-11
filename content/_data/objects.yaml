@@ -1,3 +1,12 @@
+object_filters:
+  - artist
+  - year
+
+object_card:
+  - thumbnail
+  - id
+  - title
+
 object_display_order:
   - artist
   - year
@@ -7,8 +16,8 @@ object_display_order:
 
 object_list:
 
-  - id: 1
-    title: Human Erosion in California / Migrant Mother
+  - id: "1"
+    title: "*Human Erosion in California / Migrant Mother*"
     artist: Dorothea Lange
     year: 1936
     medium: Gelatin silver print
@@ -18,8 +27,8 @@ object_list:
     figure:
       - id: "cat-1"
 
-  - id: 2
-    title: Bud Fields and His Wife Ivy, and His Daughter Ellen, Hale County, Alabama
+  - id: "2"
+    title: "*Bud Fields and His Wife Ivy, and His Daughter Ellen, Hale County, Alabama*"
     artist: Walker Evans
     year: 1936
     medium: Gelatin silver print
