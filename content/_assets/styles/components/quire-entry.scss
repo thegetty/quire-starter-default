@@ -662,12 +662,14 @@ $image-divider-height: 16px;
     }
 
     div.quire-entry__content {
-      overflow: scroll;
-      width: 100%;
-      height: calc(
-        ((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * 0.55) -
-          $image-divider-height
-      );
+      @media screen {
+        overflow: scroll;
+        width: 100%;
+        height: calc(
+          ((100vh - #{$navbar-height} - #{$quire-progress-bar-height}) * 0.55) -
+            $image-divider-height
+        );
+      }
 
       @media screen and (min-width: $desktop) {
         height: 100vh;
