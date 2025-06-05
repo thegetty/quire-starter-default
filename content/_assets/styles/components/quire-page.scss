@@ -696,8 +696,8 @@ html {
         }
       }
       // add some space above the start of the content
-      + .quire-page__content p:first-child,
-      + .quire-page__content figure:first-child {
+      + .quire-page__content .content > p:first-child,
+      + .quire-page__content .content > figure:first-child {
         @media print {
           padding-top: 1.375in;
         }

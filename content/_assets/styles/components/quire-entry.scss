@@ -482,8 +482,9 @@ $image-divider-height: 16px;
       }
       font-size: 0.875em;
 
-      td {
+      th, td {
         border: none;
+        color: inherit;
       }
     }
 
