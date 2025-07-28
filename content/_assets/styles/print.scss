@@ -585,6 +585,13 @@ $print-trim: $print-bleed * 2;
     }
   }
 
+  // Remove icons from PDF reading order
+  // they currently don’t include titles and so fail PDF accessibility tests
+  svg.quire-copyright__icon,
+  .quire-copyright__icon__link {
+    prince-pdf-tag-type: Artifact;
+  }
+
 // Title Page and Half Title Page
 // -----------------------------------------------------------------------------
   .title-page {

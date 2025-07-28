@@ -4,46 +4,54 @@ figure_list:
     src: figures/lange.jpg
     caption: "*Dorothea Lange, Resettlement Administration photographer, in California*, 1936."
     credit: "Library of Congress Prints and Photographs Division"
+    alt: "Shot low and looking up at an old model car on a dirt row with a hill behind. A woman sits on the roof of the car holding a large camera and smiling."
 
   - id: "evans"
     src: figures/evans.jpg
     caption: "*Walker Evans, profile, hand up to face*, 1937."
     credit: "Library of Congress Prints and Photographs Division"
+    alt: "A seated man looking away to the left, his hand at his cheek, his hair mussed, a slight worried expression on his face."
 
   - id: "fig-1"
     label: "Figure 1"
     src: figures/evans-legionnaire.jpg
     caption: "Walker Evans. *[American Legionnaire]*, 1935."
     credit: "The J. Paul Getty Museum, Los Angeles"
+    alt: "A man, from the chest up, in a decorated uniform turned to look at the camera. Other men in similar attire talk amongst one another in the background."
 
   - id: "fig-2"
     label: "Figure 2"
     src: figures/evans-sons.jpg
     caption: "Walker Evans. *Sons of the American Legion, Bethlehem, Pennsylvania*, 1935."
     credit: "The J. Paul Getty Museum, Los Angeles"
+    alt: "Three boys standing in matching pants, white shirts, dark ties, and hats. Two look at the camera, unamused, the other’s attention is elsewhere."
 
   - id: "fig-3"
     label: "Figure 3"
     src: figures/evans-graveyard.jpg
     caption: "Walker Evans. *Graveyard, Houses and Steel Mill, Bethlehem, Pennsylvania*, 1935; printed later."
     credit: "The J. Paul Getty Museum, Los Angeles"
+    alt: "A large stone cross in the foreground, with smaller grave markers receding behind. Further back are brick row houses and behind them a row of factory towers which stretch across most of the top of the frame."
 
   - id: "fig-4"
     label: "Figure 4"
     src: figures/evans-hymns.jpg
     caption: "Walker Evans. *Alabama Tenant Farmer Family Singing Hymns / The Tengle Family, Hale County, Alabama*, 1936."
     credit: "The J. Paul Getty Museum, Los Angeles"
+    alt: "A small group of people standing in front of a doorway and rough wooden wall of a building, looking at a book in one man's hands and singing. Other figures are cropped out along the edges."
 
   - id: "fig-5"
     label: "Figure 5"
     src: figures/evans-burroughs.jpg
     caption: "Walker Evans. *Floyd and Lucille Burroughs, Hale County, Alabama*, 1936."
     credit: "The J. Paul Getty Museum, Los Angeles"
+    alt: "A man sitting in a doorway and a young woman beside him in a chair, both barefoot, on the porch of a wooden house."
 
   - id: "lange-house"
     src: figures/lange-house.jpg
     caption: "Dorothea Lange. *Abandoned Dust Bowl Home*, about 1935–1940."
     credit: The J. Paul Getty Museum, Los Angeles
+    alt: "An abandoned-looking wooden shack darkly colored and standing straight against a light, empty expanse of sparsely vegetated dessert and cloudy sky."
 
   - id: "vid-1"
     poster: figures/evans-video-still.jpg
@@ -52,6 +60,7 @@ figure_list:
     label: "Video 1"
     caption: "A selection of Walker Evans photos from the across the United States of America, 1930s."
     credit: The J. Paul Getty Museum, Los Angeles
+    alt: "A narrow, unmarked paved road stretching away diagonally from the bottom right. On one side a row of houses and multi-pronged telegraph or electrical poles, on the other side a gas station sign and single car and figure."
 
   - id: "table-1"
     src: "tables/evans-works.html"
@@ -70,6 +79,7 @@ figure_list:
     credit: The J. Paul Getty Museum, Los Angeles
     download: true
     zoom: true
+    alt: "Close in shot of a mother with her hand to her cheek, two children pressed against either side but turned away, a baby just visible on her lap."
 
   - id: "mother-variants"
     label: "Figure 1.1"
@@ -104,13 +114,16 @@ figure_list:
     credit: The J. Paul Getty Museum, Los Angeles
     download: true
     zoom: true
+    alt: "A woman seated in a bed nursing a child, a man on a chair beside them, in a room with plain wooden floor and walls, both barefoot and staring at the camera."
 
   - id: "cat-2-b"
     src: figures/evans-fields-family-b.jpg
     caption: "Walker Evans, *Sharecropper's Family, Hale County, Alabama / Bud Fields and His Family, Hale County, Alabama / Bud Woods and His Family*, 1936."
     credit: The J. Paul Getty Museum, Los Angeles
+    alt: "Parents and four children of varying ages, seated and posing for the camera in a room with plain wooden floor and walls."
 
   - id: "cat-2-c"
     src: figures/evans-bud-fields.jpg
     caption: "Walker Evans, * [William Edward (Bud) Fields, A Cotton Sharecropper, Hale County, Alabama]/[Bud Woods, Tenant Farmer]*, 1936."
     credit: The J. Paul Getty Museum, Los Angeles
+    alt: "Portrait of a bare-chested moustached man, with a patterned bandana draped over his shoulders, photographed from the chest up, staring straight into the camera."
