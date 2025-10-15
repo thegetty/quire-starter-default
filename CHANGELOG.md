@@ -18,11 +18,15 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 ### Added
 
 - Include demo of `objects-page` for catalogue, in place of `table-of-contents` grid
+- Add example uses of accordion shortcode
 
 ### Fixed
 
 - Fixed height being applied to page in PDF output on side-by-side entry pages
 - Alignment of navigation buttons in Safari
+- Fix aspect ratio and default styles for annotations images
+- Replace broken Soundcloud embed id
+- Remove catalogue grid page from search index
 
 ## [2.9.0]
 
