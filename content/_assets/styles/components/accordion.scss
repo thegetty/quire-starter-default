@@ -163,8 +163,12 @@ $tooltip-padding: 10px;
   content: "-";
 }
 
-.accordion-section__body > p {
+.accordion-section__body {
+  margin-top: 1rem;
+
+  > p {
   margin-bottom: 20px;
+  }
 }
 
 // Tooltip
