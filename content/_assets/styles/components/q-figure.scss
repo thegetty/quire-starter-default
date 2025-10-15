@@ -590,3 +590,19 @@ div.multimedia {
     background-color: inherit!important;
   }
 }
+
+/** ANNOTATION CONTROLS **/
+
+.annotations-ui {
+  font-size: .75em;
+  font-weight: 600;
+  margin-top: .5rem;
+
+  .annotations-ui__input-wrapper {
+    display: inline;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
