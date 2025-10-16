@@ -13,16 +13,21 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
-## [Unreleased]
+## [2.10.0]
 
 ### Added
 
 - Include demo of `objects-page` for catalogue, in place of `table-of-contents` grid
+- Add example uses of accordion shortcode
 
 ### Fixed
 
 - Fixed height being applied to page in PDF output on side-by-side entry pages
 - Alignment of navigation buttons in Safari
+- Fix aspect ratio and default styles for annotations images
+- Replace broken Soundcloud embed id
+- Remove catalogue grid page from search index
+- Neutralize accordion styles and interactivity in pdf and epub output
 
 ## [2.9.0]
 

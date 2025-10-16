@@ -67,11 +67,10 @@ figure_list:
     media_type: table
 
   - id: "audio-1"
-    media_id: 336879231
+    media_id: 748443409
     media_type: soundcloud
     label: "Audio 1"
-    caption: "Echoing the work of Lange and Evans, contemporary photographer Chris Killip documents social landscapes and is known for a series of powerful images of struggling industrial communities in North East England."
-    credit: "© J. Paul Getty Trust"
+    caption: "*Modern Art Notes Podcast*, episode 429, “Dorothea Lange, Soul of a Nation,” hosted by Tyler Green, https://soundcloud.com/manpodcast/ep429."
 
   - id: "cat-1"
     src: figures/lange-mother-a.jpg
