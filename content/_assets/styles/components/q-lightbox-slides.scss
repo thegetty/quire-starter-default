@@ -34,6 +34,13 @@
       opacity: 1;
       display: block;
       transition: transform 0s, opacity 0.4s linear;
+
+      img.q-figure__image {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+      }
     }
   }
 
