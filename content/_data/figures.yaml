@@ -67,7 +67,7 @@ figure_list:
     media_type: table
 
   - id: "audio-1"
-    media_id: 748443409
+    media_id: "748443409"
     media_type: soundcloud
     label: "Audio 1"
     caption: "*Modern Art Notes Podcast*, episode 429, “Dorothea Lange, Soul of a Nation,” hosted by Tyler Green, https://soundcloud.com/manpodcast/ep429."
