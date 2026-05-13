@@ -769,8 +769,8 @@ html {
   .content {
     a:not(.q-figure__modal-link):not(.q-figure__reset-link):not(.quire-contributor__url):not(.accordion-section__heading-link) {
       @media print {
-        color: $print-text-color;
-        border-bottom-width: 0;
+        color: $print-text-color !important;
+        border-bottom-width: 0 !important;
       }
       line-height: inherit;
       @if $theme == classic {
