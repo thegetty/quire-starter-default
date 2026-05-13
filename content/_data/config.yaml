@@ -27,7 +27,7 @@ entryPage:
   objectLinkText: View in Collection
 
 epub:
-  defaultCoverImage: 'epub-cover.png'
+  defaultCoverImage: 'static-cover.jpg'
   outputDir: '_epub'
 
 footnotes:
