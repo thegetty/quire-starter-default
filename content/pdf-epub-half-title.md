@@ -1,4 +1,5 @@
 ---
+title: Half Title Page # Doesn't display but required for EPUB
 layout: base.11ty.js
 classes:
   - half-title-page
