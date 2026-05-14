@@ -1,3 +1,17 @@
+# https://kb.daisy.org/publishing/docs/metadata/schema.org/index.html
+accessibilityMetadata:
+  accessibilitySummary: This publication meets baseline accessibility standards
+  accessMode:
+    - textual
+    - visual 
+  accessModeSufficient:
+    - textual,visual
+    - textual
+  accessibilityFeature:
+    - unknown
+  accessibilityHazard:
+    - unknown
+
 accordion:
   controls: arrow # arrow | plus-minus
   copyButton:
