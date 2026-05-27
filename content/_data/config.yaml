@@ -49,6 +49,7 @@ footnotes:
 
 figures:
   assetDir: '/_assets/'
+  defaultLabel: 'Figure' # Displayed in search results when no `label` is defined
   enableModal: true
   imageDir: '/_assets/images'
 
