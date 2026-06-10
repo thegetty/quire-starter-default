@@ -25,7 +25,7 @@ accordion:
 analytics:
   googleId: ''
 
-bylineFormat: name-title # name | name-title | false
+bylineFormat: name-title # initials | name | name-title | string | false
 
 bibliography:
   displayOnPage: true
