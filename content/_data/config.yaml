@@ -1,3 +1,17 @@
+# https://kb.daisy.org/publishing/docs/metadata/schema.org/index.html
+accessibilityMetadata:
+  accessibilitySummary: This publication meets baseline accessibility standards
+  accessMode:
+    - textual
+    - visual 
+  accessModeSufficient:
+    - textual,visual
+    - textual
+  accessibilityFeature:
+    - unknown
+  accessibilityHazard:
+    - unknown
+
 accordion:
   controls: arrow # arrow | plus-minus
   copyButton:
@@ -27,7 +41,7 @@ entryPage:
   objectLinkText: View in Collection
 
 epub:
-  defaultCoverImage: 'epub-cover.png'
+  defaultCoverImage: 'static-cover.jpg'
   outputDir: '_epub'
 
 footnotes:
@@ -35,6 +49,7 @@ footnotes:
 
 figures:
   assetDir: '/_assets/'
+  defaultLabel: 'Figure' # Displayed in search results when no `label` is defined
   enableModal: true
   imageDir: '/_assets/images'
 

@@ -13,6 +13,23 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.11.0]
+
+### Added
+
+- Default config for epub accessibility metatdata
+- Default config for figure label texts in search
+- Page titles required for epub validation
+
+### Fixed
+
+- Small layout and styling issues in pdf and epub output
+
+### Changed
+
+- Default pdf output is now without crop marks and bleeds for printing, they can still be added in `variables.scss` for the minority of users who use the pdf for print-on-demand printing
+- Demo cover image is static jpg rather than transparent png to mirror typical use
+
 ## [2.10.0]
 
 ### Added

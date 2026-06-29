@@ -3,6 +3,8 @@ title: Introduction
 subtitle: A Tale of Two Photographers
 layout: splash
 order: 10
+classes:
+  - frontmatter
 image: figures/lange-house.jpg
 ---
 

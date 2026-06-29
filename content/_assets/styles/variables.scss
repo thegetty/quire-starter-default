@@ -59,7 +59,8 @@ $quire-hover-color: $light-yellow;
 // -----------------------------------------------------------------------------
 $print-width: 8.5in;
 $print-height: 11in;
-$print-bleed: .125in;
+$print-bleed: 0; // .125in is common
+$print-crop-marks: none; // crop | cross | crop cross | none
 
 $print-bottom-margin: 0.875in;
 $print-top-margin: 0.75in;
