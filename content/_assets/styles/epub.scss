@@ -574,7 +574,7 @@ h2 + hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -599,6 +599,7 @@ h2 + hr {
 .quire-cover__hero .hero-body *,
 .quire-page__header--with-image .hero-body * {
   color: $white;
+  text-align: center;
 }
 // Fix display of cover subtitle
 .quire-cover__hero .hero-body .subtitle {
