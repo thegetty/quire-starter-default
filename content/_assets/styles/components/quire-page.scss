@@ -510,12 +510,6 @@ html {
       }
     }
   }
-
-  &.frontmatter {
-    @media print {
-      background-color: transparent;
-    }
-  }
 }
 
 // .quire-page-header
@@ -669,23 +663,39 @@ html {
 
 .quire-splash {
   .quire-page__header {
-    &.hero-image {
+    &.quire-page__header--with-image {
       background-color: transparent;
       height: 50vh;
       max-height: 500px;
-      background-position: center;
+      overflow: hidden;
+      position: relative;
       @media print {
         $splash-page-width: $print-width + $print-bleed + $print-bleed;
         $splash-page-height: $print-height + $print-bleed + $print-bleed;
 
-        background-color: $print-splash-color;
         color: $white;
         width: $splash-page-width;
         height: $splash-page-height;
         max-height: $splash-page-height;
         margin: -$print-bleed;
       }
+      .hero-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: none;
+        min-width: 100%;
+        min-height: 100%;
+        @media print {
+          z-index: -1;
+        }
+      }
       .hero-body {
+        z-index: 0;
+        @media print {
+          z-index: 1;
+        }
         .label,
         .quire-page__header__title,
         .quire-page__header__contributor {

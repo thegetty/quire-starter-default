@@ -124,7 +124,7 @@ $print-trim: $print-bleed * 2;
     margin-bottom: -$print-bleed;
     margin-left: 0;
     margin-right: 0;
-    background-color: $print-splash-color;
+    background-color: initial;
     @bottom-right {
       content: none;
     }
@@ -132,6 +132,12 @@ $print-trim: $print-bleed * 2;
     @bottom-left {
       content: none;
     }
+  }
+  @page splash-image:left {
+    background-color: initial;
+  }
+  @page splash-image:right {
+    background-color: initial;
   }
 
   @page entry-image {
@@ -299,7 +305,7 @@ $print-trim: $print-bleed * 2;
   .quire-splash {
     page: splash;
     .quire-page__header {
-      &.hero-image {
+      &.quire-page__header--with-image {
         page: splash-image;
 
       }
