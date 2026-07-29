@@ -593,8 +593,16 @@ html {
 
 // Download link defaults
 .quire-download__link {
-  color: if($theme == classic,$black,$accent-color);
-  fill: if($theme == classic,$black,$accent-color);
+  @if $theme == classic { 
+    color: $black;
+  } @else {
+    color: $accent-color;
+  }
+  @if $theme == classic {
+    fill: $black;
+  } @else {
+    fill: $accent-color;
+  }
   font-size: 0.875rem;
 
   span {
@@ -614,8 +622,16 @@ html {
     margin: 1.5rem auto 0;
 
     &:hover {
-      color: if($theme == classic,$accent-color,link-hover-color($secondary-background-color));
-      fill: if($theme == classic,$accent-color,link-hover-color($secondary-background-color));
+      @if $theme == classic {
+        color: $accent-color;
+      } @else {
+        color: link-hover-color($secondary-background-color);
+      };
+      @if $theme == classic {
+        fill: $accent-color;
+      } @else {
+        fill: link-hover-color($secondary-background-color);
+      };
     }
     .quire-download__link__icon {
       height: 1rem;
@@ -650,8 +666,16 @@ html {
 
     .quire-download__link {
       &:hover {
-        color: if($theme == classic,$accent-color,link-hover-color($content-background-color));
-        fill: if($theme == classic,$accent-color,link-hover-color($content-background-color));
+        @if $theme == classic {
+          color: $accent-color;
+        } @else {
+          color: link-hover-color($content-background-color);
+        };
+        @if $theme == classic {
+          fill: $accent-color;
+        } @else {
+          fill: link-hover-color($content-background-color);
+        };
       }
       .quire-download__link__icon {
         height: 0.875rem;
