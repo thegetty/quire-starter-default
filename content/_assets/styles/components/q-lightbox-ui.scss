@@ -33,6 +33,43 @@
       background-position-y: -24px;
     }
   }
+  
+  .q-lightbox-ui__zoom {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    margin-top: 10px;
+    padding: 0;
+    border: 0;
+
+    &-button {
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      border: 0;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+
+      &::after {
+        font-size: 2em;
+        line-height: 0.5em;
+      }
+
+      &--in::after {
+        content: "+";
+      }
+      &--out::after {
+        content: "-";
+      }
+
+      &:disabled {
+        color: gray;
+      }
+    }
+  }
 
   .q-lightbox-ui__download-and-counter {
     position: absolute;
