@@ -62,7 +62,6 @@
     }
 
     &:hover {
-
       img {
         -webkit-box-shadow: 0px 0px 6px 0px $black-semi-transparent;
         -moz-box-shadow: 0px 0px 6px 0px $black-semi-transparent;
@@ -174,7 +173,7 @@
     height: 0;
     font-weight: 700;
     line-height: 0;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     a {
       @if $theme == classic {
         color: background-color-text-classic($content-background-color);
@@ -186,7 +185,7 @@
       display: inline-block;
       line-height: 1;
       margin-top: 0;
-      margin-left: -.3em;
+      margin-left: -0.3em;
       vertical-align: middle;
       @media print {
         display: none;
@@ -195,7 +194,7 @@
         @if $theme == classic {
           fill: background-color-text-classic($content-background-color);
         } @else {
-        fill: $accent-color;
+          fill: $accent-color;
         }
         width: 1.5rem;
         height: 1.5rem;
@@ -577,26 +576,31 @@ div.multimedia {
       color: link-hover-color($content-background-color);
     }
   }
+
+  .q-lightbox-ui__zoom {
+    display: none;
+  }
 }
 
 /** VIDEO/AUDIO FALLBACK ELEMENTS **/
 
 /* Override global link styles on icon in caption */
 .quire-page__content .q-figure__caption {
-  .popup, .popup:hover {
-    border-bottom: none!important;
+  .popup,
+  .popup:hover {
+    border-bottom: none !important;
   }
   .popup:focus {
-    background-color: inherit!important;
+    background-color: inherit !important;
   }
 }
 
 /** ANNOTATION CONTROLS **/
 
 .annotations-ui {
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: 600;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 
   .annotations-ui__input-wrapper {
     display: inline;
