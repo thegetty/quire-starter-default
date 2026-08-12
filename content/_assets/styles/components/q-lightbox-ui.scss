@@ -10,7 +10,7 @@
   .q-lightbox-slides__caption {
     z-index: 1;
   }
-  
+
   .q-lightbox-ui__fullscreen-button {
     position: absolute;
     top: 0;
@@ -33,40 +33,53 @@
       background-position-y: -24px;
     }
   }
-  
+
   .q-lightbox-ui__zoom {
-    display: flex;
     position: absolute;
-    top: 0;
-    left: 40px;
+    top: 30px;
+    left: 0px;
     margin-top: 10px;
-    padding: 0;
-    border: 0;
 
     &-button {
-      margin-left: 10px;
+      position: absolute;
+      top: 0;
       width: 30px;
       height: 30px;
+      margin-left: 10px;
       padding: 0;
       border: 0;
       cursor: pointer;
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
 
+      &:last-child {
+        top: 30px;
+      }
+
+      &::after,
+      &--in::before {
+        position: absolute;
+        content: " ";
+        display: block;
+        width: 16px;
+        height: 16px;
+      }
+
       &::after {
-        font-size: 2em;
-        line-height: 0.5em;
+        border-bottom: 2px solid white;
+        bottom: 14px;
+        left: 7px;
       }
 
-      &--in::after {
-        content: "+";
-      }
-      &--out::after {
-        content: "-";
+      &--in::before {
+        border-left: 2px solid white;
+        left: 14px;
+        bottom: 7px;
       }
 
-      &:disabled {
-        color: gray;
+      &:disabled::before,
+      &:disabled::after {
+        border-color: gray;
       }
     }
   }
@@ -78,7 +91,7 @@
     margin-top: 10px;
     margin-right: 10px;
     padding: 0 8px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     font-weight: bold;
     line-height: 30px;
@@ -101,7 +114,7 @@
   }
 
   .q-lightbox-ui__navigation-button::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
   }
@@ -116,7 +129,7 @@
 
   .q-lightbox-ui__navigation-button--next::before,
   .q-lightbox-ui__navigation-button--previous::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 50%;
