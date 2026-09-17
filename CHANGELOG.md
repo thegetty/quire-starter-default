@@ -13,6 +13,12 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.11.1]
+
+### Added
+
+- Styles for canvas panel zoom buttons
+
 ## [2.11.0]
 
 ### Added
@@ -50,7 +56,7 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 
 ### Fixed
 
-- Removes deprecated `ref` shortcode from figure callouts, closes @thegetty/quire#886 
+- Removes deprecated `ref` shortcode from figure callouts, closes @thegetty/quire#886
 
 ## [2.8.0]
 
@@ -86,7 +92,7 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 
 ### Removed
 
-- Page number on copyright page 
+- Page number on copyright page
 - About page from PDF and EPUB output
 
 ## [2.3.0]
