@@ -13,6 +13,12 @@ Project versions conform to [Semantic Versioning](https://semver.org/)
 * `Fixed`: for any bug fixes
 - `Removed`: for deprecated features removed in this release
 
+## [2.11.2]
+
+### Fixed
+
+- Bad css for cover and splash page images
+
 ## [2.11.1]
 
 ### Added
