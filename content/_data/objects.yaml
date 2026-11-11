@@ -21,7 +21,7 @@ object_list:
     artist: Dorothea Lange
     year: 1936
     medium: Gelatin silver print
-    dimensions: 34.1 cm × 26.8 cm (13 <sup>7</sup>⁄<sub>16</sub> in × 10 <sup>9</sup>⁄<sub>16</sub> in.)
+    dimensions: 34.1 cm × 26.8 cm (13 ^7^⁄~16~ in × 10 ^9^⁄~16~ in.)
     location: J. Paul Getty Museum
     link:  https://www.getty.edu/art/collection/object/108E2E
     figure:
@@ -32,7 +32,7 @@ object_list:
     artist: Walker Evans
     year: 1936
     medium: Gelatin silver print
-    dimensions: 19.4 x 24.4 (7 <sup>5</sup>⁄<sub>8</sub> x 9 <sup>5</sup>⁄<sub>8</sub> in.)
+    dimensions: 19.4 x 24.4 (7 ^5^⁄~8~ x 9 ^5^⁄~8~ in.)
     location: J. Paul Getty Museum
     link: https://www.getty.edu/art/collection/object/104A2K
     figure:
