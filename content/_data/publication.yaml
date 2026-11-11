@@ -103,7 +103,7 @@ resource_link:
 subject:
   - type: bisac
     name: PHOTOGRAPHY / Subjects & Themes / Historical
-    identifer: PHO023100
+    identifier: PHO023100
   - type: keywords
     name: photography, black-and-white, great despression
 
